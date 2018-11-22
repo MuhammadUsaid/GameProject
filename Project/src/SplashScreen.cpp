@@ -2,7 +2,7 @@
 
 SplashScreen::SplashScreen()
 {
-    backGround = TextureManager::LoadTexture("Images/boy.png");
+   backGround = TextureManager::LoadTexture("Images/splash.jpg");
 }
 
 void SplashScreen::HandleEvents()

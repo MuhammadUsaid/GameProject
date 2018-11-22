@@ -1,8 +1,6 @@
 #pragma once
 #include <iostream>
 #include <SDL2/SDL.h>
-#include "SplashScreen.h"
-
 
 using namespace std;
 
@@ -13,7 +11,7 @@ public:
     Game();
     /** Attributes **/
     static SDL_Renderer* renderer;
-    Screen* currentScreen = nullptr;
+//    Screen* currentScreen = nullptr;
     static int width;
     static int height;
     /** Methods **/
@@ -27,6 +25,6 @@ private:
     bool running;
     SDL_Window* window;
     void Init();
-    void ShowSplash(); //To show splash screen for 3 seconds
+    //void ShowSplash(); //To show splash screen for 3 seconds
 };
 

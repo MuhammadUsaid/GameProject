@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1542905012 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+
+1542905024 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\game.h
+	<iostream>
+	<SDL2/SDL.h>
+
+1542905061 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\main.cpp
+	"Game.h"
+

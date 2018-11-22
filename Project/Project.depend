@@ -14,11 +14,11 @@
 1542865886 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\enemy.h
 	"BaseCharacter.h"
 
-1542893783 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\game.cpp
+1542904160 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\game.cpp
 	"Game.h"
 	<SDL2/SDL_image.h>
 
-1542887601 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\game.h
+1542904384 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\game.h
 	<iostream>
 	<SDL2/SDL.h>
 	"SplashScreen.h"
@@ -32,7 +32,7 @@
 1542880305 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\gamescreen.h
 	"Screen.h"
 
-1542887834 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\screen.h
+1542904467 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\screen.h
 	"TextureManager.h"
 
 1542863285 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\menuscreen.cpp
@@ -62,10 +62,10 @@
 1542884830 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\screen.cpp
 	"Screen.h"
 
-1542893824 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\splashscreen.cpp
+1542903844 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\splashscreen.cpp
 	"SplashScreen.h"
 
-1542893843 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\splashscreen.h
+1542904327 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\splashscreen.h
 	"Screen.h"
 
 1542863662 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\weapon.cpp
