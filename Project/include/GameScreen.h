@@ -7,10 +7,9 @@ class GameScreen : public Screen
 {
     public:
         GameScreen();
-        virtual ~GameScreen();
-
-    protected:
-
-    private:
+        void Update();
+        void Render();
+        void HandleEvents();
+        ~GameScreen();
 };
 

@@ -4,3 +4,7 @@ Screen::Screen()
 {
     //ctor
 }
+Screen::~Screen()
+{
+
+}

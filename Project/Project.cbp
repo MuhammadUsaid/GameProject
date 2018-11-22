@@ -13,7 +13,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/Project" prefix_auto="1" extension_auto="1" />
@@ -22,6 +26,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +37,34 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/BaseCharacter.h" />
+		<Unit filename="include/Enemy.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/GameObject.h" />
+		<Unit filename="include/GameScreen.h" />
+		<Unit filename="include/MenuScreen.h" />
+		<Unit filename="include/ObjectFactory.h" />
+		<Unit filename="include/PauseScreen.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/QuitScreen.h" />
+		<Unit filename="include/Screen.h" />
+		<Unit filename="include/SplashScreen.h" />
+		<Unit filename="include/TextureManager.h" />
+		<Unit filename="include/Weapon.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/BaseCharacter.cpp" />
+		<Unit filename="src/Enemy.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/GameObject.cpp" />
+		<Unit filename="src/GameScreen.cpp" />
+		<Unit filename="src/MenuScreen.cpp" />
+		<Unit filename="src/PauseScreen.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/QuitScreen.cpp" />
+		<Unit filename="src/Screen.cpp" />
+		<Unit filename="src/SplashScreen.cpp" />
+		<Unit filename="src/TextureManager.cpp" />
+		<Unit filename="src/Weapon.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

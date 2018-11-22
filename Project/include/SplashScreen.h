@@ -7,9 +7,8 @@ class SplashScreen : public Screen
 {
     public:
         SplashScreen();
-        virtual ~SplashScreen();
-
-    protected:
-
-    private:
+        void Update();
+        void Render();
+        void HandleEvents();
+        ~SplashScreen();
 };
