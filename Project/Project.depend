@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1542863532 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\basecharacter.cpp
+	"BaseCharacter.h"
+
+1542865858 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\basecharacter.h
+	"GameObject.h"
+
+1542865949 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\gameobject.h
+
+1542863605 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\enemy.cpp
+	"Enemy.h"
+
+1542865886 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\enemy.h
+	"BaseCharacter.h"
+
+1542863356 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\game.cpp
+	"Game.h"
+
+1542866122 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\game.h
+
+1542863397 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\gameobject.cpp
+	"GameObject.h"
+
+1542863209 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\gamescreen.cpp
+	"GameScreen.h"
+
+1542865963 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\gamescreen.h
+	"Screen.h"
+
+1542862979 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\screen.h
+
+1542863285 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\menuscreen.cpp
+	"MenuScreen.h"
+
+1542865980 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\menuscreen.h
+	"Screen.h"
+
+1542863246 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\pausescreen.cpp
+	"PauseScreen.h"
+
+1542865996 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\pausescreen.h
+	"Screen.h"
+
+1542863561 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\player.cpp
+	"Player.h"
+
+1542866010 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\player.h
+	"BaseCharacter.h"
+
+1542863315 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\quitscreen.cpp
+	"QuitScreen.h"
+
+1542866026 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\quitscreen.h
+	"Screen.h"
+
+1542863075 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\screen.cpp
+	"Screen.h"
+
+1542863143 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\splashscreen.cpp
+	"SplashScreen.h"
+
+1542866043 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\splashscreen.h
+	"Screen.h"
+
+1542863662 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\src\weapon.cpp
+	"Weapon.h"
+
+1542866061 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\include\weapon.h
+	"GameObject.h"
+
+1542866109 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\project\main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_mixer.h>
+
