@@ -1,7 +1,6 @@
 #pragma once
 #include "Game.h"
 
-
 class Screen
 {
 protected:

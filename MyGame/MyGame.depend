@@ -3,9 +3,10 @@
 	"Game.h"
 	<SDL2/SDL_image.h>
 
-1542907967 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\game.h
+1542911424 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\game.h
 	<iostream>
 	<SDL2/SDL.h>
+	"SplashScreen.h"
 
 1542905061 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\main.cpp
 	"Game.h"
@@ -13,4 +14,13 @@
 1542907940 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\textmanager.h
 	"Game.h"
 	<SDL2/SDL_image.h>
+
+1542911267 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\splashscreen.cpp
+	"SplashScreen.h"
+
+1542911548 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\splashscreen.h
+	"Screen.h"
+
+1542911578 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\screen.h
+	"Game.h"
 

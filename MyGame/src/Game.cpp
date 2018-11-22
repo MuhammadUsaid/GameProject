@@ -42,7 +42,7 @@ void Game::Init()
     }
     SDL_SetRenderDrawColor(renderer, 0,0,0,255);
     running = true;
-    //ShowSplash();
+    ShowSplash();
     //currentScreen = new MenuScreen;
 }
 
@@ -52,14 +52,14 @@ bool Game::isRunning()
     return running;
 }
 /** Show Splash Screen for 5 seconds **/
-//void Game::ShowSplash()
-//{
-//    SplashScreen splash;
-//    SDL_RenderClear(Game::renderer);
-//    splash.Render();
-//    SDL_RenderPresent(Game::renderer);
-//    SDL_Delay(3000);
-//}
+void Game::ShowSplash()
+{
+    SplashScreen splash;
+    SDL_RenderClear(Game::renderer);
+    splash.Render();
+    SDL_RenderPresent(Game::renderer);
+    SDL_Delay(3000);
+}
 
 /**** Method To Handle Events ****/
 

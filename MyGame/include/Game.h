@@ -1,7 +1,8 @@
 #pragma once
 #include <iostream>
 #include <SDL2/SDL.h>
-//#include "TextManager.h"
+#include "SplashScreen.h"
+
 
 using namespace std;
 
@@ -26,6 +27,6 @@ private:
     bool running;
     SDL_Window* window;
     void Init();
-    //void ShowSplash(); //To show splash screen for 3 seconds
+    void ShowSplash(); //To show splash screen for 3 seconds
 };
 
