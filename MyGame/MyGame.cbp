@@ -37,11 +37,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/Game.h" />
-		<Unit filename="include/Screen.h" />
-		<Unit filename="include/TextManager.h" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="MenuScreen.h" />
+		<Unit filename="Screen.h" />
+		<Unit filename="SplashScreen.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Game.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

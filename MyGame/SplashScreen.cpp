@@ -5,10 +5,7 @@ SplashScreen::SplashScreen()
 {
     backGround = TextureManager::LoadTexture("Images/splash.jpg");
 }
-void SplashScreen::HandleEvents()
-{
 
-}
 void SplashScreen::Update()
 {
 
@@ -17,7 +14,11 @@ void SplashScreen::Render()
 {
     SDL_RenderCopy(Game::renderer, backGround, nullptr, nullptr);
 }
+void SplashScreen::HandleEvents()
+{
+
+}
 SplashScreen::~SplashScreen()
 {
-    //dtor
+    SDL_DestroyTexture(backGround);
 }

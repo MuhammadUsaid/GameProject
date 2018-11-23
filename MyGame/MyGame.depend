@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1542905012 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\game.cpp
+1542911401 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\game.cpp
 	"Game.h"
 	<SDL2/SDL_image.h>
 
@@ -15,12 +15,51 @@
 	"Game.h"
 	<SDL2/SDL_image.h>
 
-1542911267 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\splashscreen.cpp
+1542912989 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\splashscreen.cpp
 	"SplashScreen.h"
+	"TextManager.h"
 
-1542911548 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\splashscreen.h
+1542968972 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\splashscreen.h
 	"Screen.h"
 
 1542911578 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\screen.h
 	"Game.h"
+
+1542911673 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\menuclass.cpp
+	"MenuClass.h"
+
+1542911729 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\menuclass.h
+	"Screen.h"
+
+1543008707 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
+	<iostream>
+	<SDL2/SDL.h>
+	"Screen.h"
+	"SplashScreen.h"
+	"MenuScreen.h"
+
+1542972575 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.h
+	"Screen.h"
+
+1543008673 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\screen.h
+	"SDL2/SDL.h"
+
+1542973577 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.cpp
+	"SplashScreen.h"
+	"TextManager.h"
+
+1543008757 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\textmanager.h
+	<SDL2/SDL_image.h>
+	"Game.h"
+
+1542972796 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+
+1542973590 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
+	"MenuScreen.h"
+	"TextManager.h"
+
+1542972641 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.h
+	"Screen.h"
 

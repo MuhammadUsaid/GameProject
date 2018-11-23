@@ -126,3 +126,4 @@ Game::~Game()
     renderer = nullptr;
     SDL_Quit();
 }
+

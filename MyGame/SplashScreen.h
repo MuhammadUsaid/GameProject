@@ -1,7 +1,8 @@
 #pragma once
-#include "Screen.h"
+#include"Screen.h"
 
-class SplashScreen: public Screen
+
+class SplashScreen : public Screen
 {
 public:
     SplashScreen();
@@ -10,3 +11,5 @@ public:
     void HandleEvents();
     ~SplashScreen();
 };
+
+

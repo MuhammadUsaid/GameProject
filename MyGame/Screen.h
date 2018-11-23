@@ -1,5 +1,5 @@
 #pragma once
-#include "Game.h"
+#include "SDL2/SDL.h"
 
 class Screen
 {
@@ -12,3 +12,4 @@ public:
     virtual void HandleEvents() = 0;
     virtual ~Screen(){}
 };
+

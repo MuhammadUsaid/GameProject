@@ -1,7 +1,6 @@
 #pragma once
-#include "Game.h"
 #include <SDL2/SDL_image.h>
-
+#include "Game.h"
 
 class TextureManager
 {
