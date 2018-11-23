@@ -52,17 +52,18 @@
 	<SDL2/SDL_image.h>
 	"Game.h"
 
-1543009274 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
+1543012731 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
 	"Game.h"
 	<SDL2/SDL_image.h>
 
-1543010274 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
+1543012848 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
 	"MenuScreen.h"
 	"TextManager.h"
 	"Button.h"
 
-1542972641 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.h
+1543012786 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.h
 	"Screen.h"
+	"Button.h"
 
 1543010059 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.h
 	"Word.h"
@@ -70,7 +71,7 @@
 1543009919 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\word.h
 	"Character.h"
 
-1543010298 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.h
+1543011081 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.h
 	<SDL2/SDL.h>
 	<iostream>
 
@@ -79,5 +80,9 @@
 
 1543010360 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.cpp
 	"Character.h"
+	"Game.h"
+
+1543011247 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.cpp
+	"Button.h"
 	"Game.h"
 

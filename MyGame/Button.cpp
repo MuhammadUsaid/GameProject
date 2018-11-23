@@ -1,7 +1,5 @@
 #include "Button.h"
 #include "Game.h"
-//#include<vector>
-//#include<sstream>
 
 using namespace std;
 
