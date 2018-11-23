@@ -1,5 +1,6 @@
 #include "MenuScreen.h"
 #include "TextManager.h"
+#include "Button.h"
 
 MenuScreen::MenuScreen()
 {
