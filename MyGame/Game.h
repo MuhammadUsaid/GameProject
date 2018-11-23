@@ -15,7 +15,7 @@ public:
     Game();
     /** Attributes **/
     static SDL_Renderer* renderer;
-//    Screen* currentScreen = nullptr;
+    Screen* currentScreen;
     static int width;
     static int height;
     /** Methods **/

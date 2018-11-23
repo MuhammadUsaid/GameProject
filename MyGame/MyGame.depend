@@ -31,7 +31,7 @@
 1542911729 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\menuclass.h
 	"Screen.h"
 
-1543008707 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
+1543009170 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
 	<iostream>
 	<SDL2/SDL.h>
 	"Screen.h"
@@ -44,7 +44,7 @@
 1543008673 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\screen.h
 	"SDL2/SDL.h"
 
-1542973577 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.cpp
+1543008890 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.cpp
 	"SplashScreen.h"
 	"TextManager.h"
 
@@ -56,7 +56,7 @@
 	"Game.h"
 	<SDL2/SDL_image.h>
 
-1542973590 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
+1543009137 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
 	"MenuScreen.h"
 	"TextManager.h"
 

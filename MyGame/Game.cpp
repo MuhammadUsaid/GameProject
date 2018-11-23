@@ -11,6 +11,8 @@ int Game::height = 768;
 Game::Game()
 {
     Init();
+    ShowSplash();
+    currentScreen = new MenuScreen;
 }
 
 /****Method To Initialize Everything and show error if something fails****/
@@ -42,8 +44,6 @@ void Game::Init()
     }
     SDL_SetRenderDrawColor(renderer, 0,0,0,255);
     running = true;
-    ShowSplash();
-    //currentScreen = new MenuScreen;
 }
 
 /*** Get Running State ***/
@@ -115,6 +115,7 @@ void Game::Update()
 void Game::Render()
 {
     SDL_RenderClear(renderer);
+    currentScreen->Render();
     SDL_RenderPresent(renderer);
 }
 
@@ -125,5 +126,6 @@ Game::~Game()
     SDL_DestroyRenderer(renderer);
     renderer = nullptr;
     SDL_Quit();
+    delete currentScreen;
 }
 
