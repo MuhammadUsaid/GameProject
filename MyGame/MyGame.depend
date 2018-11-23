@@ -8,7 +8,7 @@
 	<SDL2/SDL.h>
 	"SplashScreen.h"
 
-1542905061 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\main.cpp
+1543013931 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\main.cpp
 	"Game.h"
 
 1542907940 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\textmanager.h
@@ -31,20 +31,20 @@
 1542911729 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\menuclass.h
 	"Screen.h"
 
-1543009170 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
+1543014238 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
 	<iostream>
 	<SDL2/SDL.h>
 	"Screen.h"
 	"SplashScreen.h"
 	"MenuScreen.h"
 
-1542972575 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.h
+1543014315 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.h
 	"Screen.h"
 
-1543008673 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\screen.h
+1543015462 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\screen.h
 	"SDL2/SDL.h"
 
-1543008890 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.cpp
+1543014605 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.cpp
 	"SplashScreen.h"
 	"TextManager.h"
 
@@ -52,16 +52,16 @@
 	<SDL2/SDL_image.h>
 	"Game.h"
 
-1543012731 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
+1543015239 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
 	"Game.h"
 	<SDL2/SDL_image.h>
 
-1543012848 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
+1543016429 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
 	"MenuScreen.h"
 	"TextManager.h"
 	"Button.h"
 
-1543012786 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.h
+1543015390 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.h
 	"Screen.h"
 	"Button.h"
 

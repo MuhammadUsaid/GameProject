@@ -2,14 +2,11 @@
 #include <SDL2/SDL_image.h>
 
 SDL_Renderer* Game::renderer = nullptr;
-//Screen* Game::currentScreen = nullptr;
-
-/** Setting the width and height **/
-int Game::width = 1024;
-int Game::height = 768;
 
 Game::Game()
 {
+    width = 1024;
+    height = 768;
     Init();
     ShowSplash();
     currentScreen = new MenuScreen;
@@ -65,44 +62,54 @@ void Game::ShowSplash()
 
 void Game::HandleEvents()
 {
-    SDL_Event e;
-    SDL_PollEvent(&e);
-    switch(e.type)
-    {
-    case SDL_QUIT:
-        running = false;
-        break;
-    case SDL_MOUSEBUTTONDOWN:
-        break;
-    case SDL_KEYDOWN:
-        switch(e.key.keysym.sym)
-        {
-        case SDLK_ESCAPE:
-            running = false;
-            break;
-        case SDLK_UP:
-            //one->MoveUp();
-            break;
-        case SDLK_DOWN:
-            //one->MoveDown();
-            break;
-        case SDLK_RIGHT:
-            //one->MoveRight();
-            break;
-        case SDLK_LEFT:
-            //one->MoveLeft();
-            break;
-        }
-        break;
-    case SDL_KEYUP:
-        switch(e.key.keysym.sym)
-        {
-        case SDLK_UP:
-            break;
-        }
-    default:
-        break;
-    }
+//    SDL_Event e;
+//    while(SDL_PollEvent(&e))
+//    {
+//        switch(e.type)
+//        {
+//        case SDL_QUIT:
+//            running = false;
+//            break;
+        //default:
+        currentScreen->HandleEvents();
+        running = currentScreen->isRunning();
+//        }
+//    }
+//    if(running)
+//    {
+//        currentScreen->HandleEvents();
+//    }
+//    case SDL_MOUSEBUTTONDOWN:
+//        break;
+//    case SDL_KEYDOWN:
+//        switch(e.key.keysym.sym)
+//        {
+//        case SDLK_ESCAPE:
+//            running = false;
+//            break;
+//        case SDLK_UP:
+//            //one->MoveUp();
+//            break;
+//        case SDLK_DOWN:
+//            //one->MoveDown();
+//            break;
+//        case SDLK_RIGHT:
+//            //one->MoveRight();
+//            break;
+//        case SDLK_LEFT:
+//            //one->MoveLeft();
+//            break;
+//        }
+//        break;
+//    case SDL_KEYUP:
+//        switch(e.key.keysym.sym)
+//        {
+//        case SDLK_UP:
+//            break;
+//        }
+//    default:
+//        break;
+//    }
 }
 
 void Game::Update()

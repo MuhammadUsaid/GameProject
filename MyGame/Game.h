@@ -16,8 +16,8 @@ public:
     /** Attributes **/
     static SDL_Renderer* renderer;
     Screen* currentScreen;
-    static int width;
-    static int height;
+    int width;
+    int height;
     /** Methods **/
     void HandleEvents();
     void Update();
