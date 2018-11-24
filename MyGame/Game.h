@@ -2,8 +2,6 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include "Screen.h"
-#include "SplashScreen.h"
-#include "MenuScreen.h"
 
 
 using namespace std;

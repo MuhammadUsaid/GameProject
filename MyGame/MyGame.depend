@@ -31,12 +31,10 @@
 1542911729 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\menuclass.h
 	"Screen.h"
 
-1543014238 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
+1543072751 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
 	<iostream>
 	<SDL2/SDL.h>
 	"Screen.h"
-	"SplashScreen.h"
-	"MenuScreen.h"
 
 1543014315 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.h
 	"Screen.h"
@@ -52,11 +50,14 @@
 	<SDL2/SDL_image.h>
 	"Game.h"
 
-1543015239 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
+1543072854 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
 	"Game.h"
 	<SDL2/SDL_image.h>
+	"SplashScreen.h"
+	"MenuScreen.h"
+	"HallScreen.h"
 
-1543016429 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
+1543016705 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
 	"MenuScreen.h"
 	"TextManager.h"
 	"Button.h"
@@ -85,4 +86,24 @@
 1543011247 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.cpp
 	"Button.h"
 	"Game.h"
+
+1543070869 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
+	"Player.h"
+	"TextManager.h"
+
+1543070794 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.h
+	"BaseCharacter.h"
+
+1543067996 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\basecharacter.h
+	"GameObject.h"
+
+1543067982 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
+	"SDL2/SDL.h"
+
+1543072669 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
+	"HallScreen.h"
+
+1543071909 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
+	"Screen.h"
+	"Player.h"
 

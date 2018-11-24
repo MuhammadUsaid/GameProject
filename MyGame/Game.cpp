@@ -1,5 +1,8 @@
 #include "Game.h"
 #include <SDL2/SDL_image.h>
+#include "SplashScreen.h"
+#include "MenuScreen.h"
+#include "HallScreen.h"
 
 SDL_Renderer* Game::renderer = nullptr;
 
@@ -8,8 +11,8 @@ Game::Game()
     width = 1024;
     height = 768;
     Init();
-    ShowSplash();
-    currentScreen = new MenuScreen;
+    //ShowSplash();
+    currentScreen = new HallScreen;
 }
 
 /****Method To Initialize Everything and show error if something fails****/
@@ -62,59 +65,12 @@ void Game::ShowSplash()
 
 void Game::HandleEvents()
 {
-//    SDL_Event e;
-//    while(SDL_PollEvent(&e))
-//    {
-//        switch(e.type)
-//        {
-//        case SDL_QUIT:
-//            running = false;
-//            break;
-        //default:
-        currentScreen->HandleEvents();
-        running = currentScreen->isRunning();
-//        }
-//    }
-//    if(running)
-//    {
-//        currentScreen->HandleEvents();
-//    }
-//    case SDL_MOUSEBUTTONDOWN:
-//        break;
-//    case SDL_KEYDOWN:
-//        switch(e.key.keysym.sym)
-//        {
-//        case SDLK_ESCAPE:
-//            running = false;
-//            break;
-//        case SDLK_UP:
-//            //one->MoveUp();
-//            break;
-//        case SDLK_DOWN:
-//            //one->MoveDown();
-//            break;
-//        case SDLK_RIGHT:
-//            //one->MoveRight();
-//            break;
-//        case SDLK_LEFT:
-//            //one->MoveLeft();
-//            break;
-//        }
-//        break;
-//    case SDL_KEYUP:
-//        switch(e.key.keysym.sym)
-//        {
-//        case SDLK_UP:
-//            break;
-//        }
-//    default:
-//        break;
-//    }
+    currentScreen->HandleEvents();
+    running = currentScreen->isRunning();
 }
-
 void Game::Update()
 {
-
+    currentScreen->Update();
 }
 
 /**** Method To Render All The Objects On Screen ****/

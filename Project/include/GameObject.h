@@ -12,6 +12,8 @@ protected:
 public:
     GameObject();
     GameObject(const char* path, int x, int y, int width, int height);
+    int GetX( return x; )
+    int GetY(){ return y;}
     void Update();
     void Render();
 };
