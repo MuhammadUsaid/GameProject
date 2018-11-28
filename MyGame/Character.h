@@ -16,6 +16,6 @@ public:
     Character(SDL_Texture* image, float x, float y, int ascii);
     ~Character();
     void Render(bool debug);
-    void operator = (const Character& cpy); //operator overloading for assignment operatot
+    void operator = (const Character& cpy); //operator overloading for assignment operator
 };
 

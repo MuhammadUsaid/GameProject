@@ -24,14 +24,14 @@ void QuitScreen::HandleEvents()
     while(SDL_PollEvent(&e))
         {
             SDL_GetMouseState(&mouseX, &mouseY);
-            onNewGame = ((newGameButton->GetX() - newGameButton->getWidth()/2) < mouseX) && ((newGameButton->GetX() + newGameButton->getWidth()/2) > mouseX)
-            && ((newGameButton->GetY() - newGameButton->getHeight()/2) < mouseY && (newGameButton->GetY() + newGameButton->getHeight()/2) > mouseY);
-            onLoadGame = ((loadGameButton->GetX() - loadGameButton->getWidth()/2) < mouseX) && ((loadGameButton->GetX() + loadGameButton->getWidth()/2) > mouseX)
-            && ((loadGameButton->GetY() - loadGameButton->getHeight()/2) < mouseY && (loadGameButton->GetY() + loadGameButton->getHeight()/2) > mouseY);
-            onQuitGame = ((quitGameButton->GetX() - quitGameButton->getWidth()/2) < mouseX) && ((quitGameButton->GetX() + quitGameButton->getWidth()/2) > mouseX)
-            && ((quitGameButton->GetY() - quitGameButton->getHeight()/2) < mouseY && (quitGameButton->GetY() + quitGameButton->getHeight()/2) > mouseY);
-            onMainMenu = ((mainMenuButton->GetX() - mainMenuButton->getWidth()/2) < mouseX) && ((mainMenuButton->GetX() + mainMenuButton->getWidth()/2) > mouseX)
-            && ((mainMenuButton->GetY() - mainMenuButton->getHeight()/2) < mouseY && (mainMenuButton->GetY() + mainMenuButton->getHeight()/2) > mouseY);
+            onNewGame = ((newGameButton->GetX() - newGameButton->GetWidth()/2) < mouseX) && ((newGameButton->GetX() + newGameButton->GetWidth()/2) > mouseX)
+            && ((newGameButton->GetY() - newGameButton->GetHeight()/2) < mouseY && (newGameButton->GetY() + newGameButton->GetHeight()/2) > mouseY);
+            onLoadGame = ((loadGameButton->GetX() - loadGameButton->GetWidth()/2) < mouseX) && ((loadGameButton->GetX() + loadGameButton->GetWidth()/2) > mouseX)
+            && ((loadGameButton->GetY() - loadGameButton->GetHeight()/2) < mouseY && (loadGameButton->GetY() + loadGameButton->GetHeight()/2) > mouseY);
+            onQuitGame = ((quitGameButton->GetX() - quitGameButton->GetWidth()/2) < mouseX) && ((quitGameButton->GetX() + quitGameButton->GetWidth()/2) > mouseX)
+            && ((quitGameButton->GetY() - quitGameButton->GetHeight()/2) < mouseY && (quitGameButton->GetY() + quitGameButton->GetHeight()/2) > mouseY);
+            onMainMenu = ((mainMenuButton->GetX() - mainMenuButton->GetWidth()/2) < mouseX) && ((mainMenuButton->GetX() + mainMenuButton->GetWidth()/2) > mouseX)
+            && ((mainMenuButton->GetY() - mainMenuButton->GetHeight()/2) < mouseY && (mainMenuButton->GetY() + mainMenuButton->GetHeight()/2) > mouseY);
             switch(e.type)
             {
             case SDL_QUIT:
@@ -40,32 +40,32 @@ void QuitScreen::HandleEvents()
             case SDL_MOUSEMOTION:
                 if(onNewGame)
                 {
-                    newGameButton->changeState(Hover);
+                    newGameButton->ChangeState(Hover);
                 }
                 else
                 {
-                    newGameButton->changeState(Normal);
+                    newGameButton->ChangeState(Normal);
                     if(onLoadGame)
                     {
-                        loadGameButton->changeState(Hover);
+                        loadGameButton->ChangeState(Hover);
                     }
                     else
                     {
-                        loadGameButton->changeState(Normal);
+                        loadGameButton->ChangeState(Normal);
                         if(onQuitGame)
                         {
-                            quitGameButton->changeState(Hover);
+                            quitGameButton->ChangeState(Hover);
                         }
                         else
                         {
-                            quitGameButton->changeState(Normal);
+                            quitGameButton->ChangeState(Normal);
                             if(onMainMenu)
                             {
-                                mainMenuButton->changeState(Hover);
+                                mainMenuButton->ChangeState(Hover);
                             }
                             else
                             {
-                                mainMenuButton->changeState(Normal);
+                                mainMenuButton->ChangeState(Normal);
                             }
                         }
                     }
@@ -78,16 +78,16 @@ void QuitScreen::HandleEvents()
                 {
                     if(onNewGame)
                     {
-                        newGameButton->changeState(Clicked);
+                        newGameButton->ChangeState(Clicked);
                         state = 1;
                     }
                     else if(onLoadGame)
                     {
-                        loadGameButton->changeState(Clicked);
+                        loadGameButton->ChangeState(Clicked);
                     }
                     else if(onQuitGame)
                     {
-                        quitGameButton->changeState(Clicked);
+                        quitGameButton->ChangeState(Clicked);
                         running = false;
                     }
                     else if(onMainMenu)

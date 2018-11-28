@@ -23,14 +23,14 @@ void PauseScreen::HandleEvents()
     while(SDL_PollEvent(&e))
     {
         SDL_GetMouseState(&mouseX, &mouseY);
-        onResumeGame = ((resumeButton->GetX() - resumeButton->getWidth()/2) < mouseX) && ((resumeButton->GetX() + resumeButton->getWidth()/2) > mouseX)
-        && ((resumeButton->GetY() - resumeButton->getHeight()/2) < mouseY && (resumeButton->GetY() + resumeButton->getHeight()/2) > mouseY);
-        onSaveGame = ((saveButton->GetX() - saveButton->getWidth()/2) < mouseX) && ((saveButton->GetX() + saveButton->getWidth()/2) > mouseX)
-        && ((saveButton->GetY() - saveButton->getHeight()/2) < mouseY && (saveButton->GetY() + saveButton->getHeight()/2) > mouseY);
-        onQuitGame = ((quitGameButton->GetX() - quitGameButton->getWidth()/2) < mouseX) && ((quitGameButton->GetX() + quitGameButton->getWidth()/2) > mouseX)
-        && ((quitGameButton->GetY() - quitGameButton->getHeight()/2) < mouseY && (quitGameButton->GetY() + quitGameButton->getHeight()/2) > mouseY);
-        onMainMenu = ((mainMenuButton->GetX() - mainMenuButton->getWidth()/2) < mouseX) && ((mainMenuButton->GetX() + mainMenuButton->getWidth()/2) > mouseX)
-        && ((mainMenuButton->GetY() - mainMenuButton->getHeight()/2) < mouseY && (mainMenuButton->GetY() + mainMenuButton->getHeight()/2) > mouseY);
+        onResumeGame = ((resumeButton->GetX() - resumeButton->GetWidth()/2) < mouseX) && ((resumeButton->GetX() + resumeButton->GetWidth()/2) > mouseX)
+        && ((resumeButton->GetY() - resumeButton->GetHeight()/2) < mouseY && (resumeButton->GetY() + resumeButton->GetHeight()/2) > mouseY);
+        onSaveGame = ((saveButton->GetX() - saveButton->GetWidth()/2) < mouseX) && ((saveButton->GetX() + saveButton->GetWidth()/2) > mouseX)
+        && ((saveButton->GetY() - saveButton->GetHeight()/2) < mouseY && (saveButton->GetY() + saveButton->GetHeight()/2) > mouseY);
+        onQuitGame = ((quitGameButton->GetX() - quitGameButton->GetWidth()/2) < mouseX) && ((quitGameButton->GetX() + quitGameButton->GetWidth()/2) > mouseX)
+        && ((quitGameButton->GetY() - quitGameButton->GetHeight()/2) < mouseY && (quitGameButton->GetY() + quitGameButton->GetHeight()/2) > mouseY);
+        onMainMenu = ((mainMenuButton->GetX() - mainMenuButton->GetWidth()/2) < mouseX) && ((mainMenuButton->GetX() + mainMenuButton->GetWidth()/2) > mouseX)
+        && ((mainMenuButton->GetY() - mainMenuButton->GetHeight()/2) < mouseY && (mainMenuButton->GetY() + mainMenuButton->GetHeight()/2) > mouseY);
         switch(e.type)
         {
         case SDL_QUIT:
@@ -39,32 +39,32 @@ void PauseScreen::HandleEvents()
         case SDL_MOUSEMOTION:
             if(onResumeGame)
             {
-                resumeButton->changeState(Hover);
+                resumeButton->ChangeState(Hover);
             }
             else
             {
-                resumeButton->changeState(Normal);
+                resumeButton->ChangeState(Normal);
                 if(onSaveGame)
                 {
-                    saveButton->changeState(Hover);
+                    saveButton->ChangeState(Hover);
                 }
                 else
                 {
-                    saveButton->changeState(Normal);
+                    saveButton->ChangeState(Normal);
                     if(onQuitGame)
                     {
-                        quitGameButton->changeState(Hover);
+                        quitGameButton->ChangeState(Hover);
                     }
                     else
                     {
-                        quitGameButton->changeState(Normal);
+                        quitGameButton->ChangeState(Normal);
                         if(onMainMenu)
                         {
-                            mainMenuButton->changeState(Hover);
+                            mainMenuButton->ChangeState(Hover);
                         }
                         else
                         {
-                            mainMenuButton->changeState(Normal);
+                            mainMenuButton->ChangeState(Normal);
                         }
                     }
                 }
@@ -77,16 +77,16 @@ void PauseScreen::HandleEvents()
             {
                 if(onResumeGame)
                 {
-                    resumeButton->changeState(Clicked);
+                    resumeButton->ChangeState(Clicked);
                     Screen::pause = 2;
                 }
                 else if(onSaveGame)
                 {
-                    saveButton->changeState(Clicked);
+                    saveButton->ChangeState(Clicked);
                 }
                 else if(onQuitGame)
                 {
-                    quitGameButton->changeState(Clicked);
+                    quitGameButton->ChangeState(Clicked);
                     running = false;
                 }
                 else if(onMainMenu)

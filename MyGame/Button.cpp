@@ -29,10 +29,10 @@ Button::Button(SDL_Texture* image,string text, float x, float y)
     spriteClips[Hover].y = 326;
     spriteClips[Hover].w = 32;
     spriteClips[Hover].h = 60;
-    spriteClips[Clicked].x = 0;
-    spriteClips[Clicked].y = 396;
-    spriteClips[Clicked].w = 32;
-    spriteClips[Clicked].h = 60;
+    spriteClips[2].x = 0;
+    spriteClips[2].y = 396;
+    spriteClips[2].w = 32;
+    spriteClips[2].h = 60;
 
     this->width = spriteClips[0].w;
     this->height = spriteClips[0].h;
@@ -45,7 +45,7 @@ Button::Button(SDL_Texture* image,string text, float x, float y)
 
 void Button::Render()
 {
-    int textLength = word->getLength();
+    int textLength = word->GetLength();
     float posX=x-(32*((textLength-1)/2)+16)-16; ///Position for the left part of the button
     spriteClips[state].x = 0;  ///selects the spriteClip according to Button State
     SDL_Rect dst = {posX - width/2, y - height/2, width, height};
@@ -81,34 +81,30 @@ int Button::GetX()
 {
     return x;
 }
-
 int Button::GetY()
 {
     return y;
 }
-
-int Button::getWidth()
+int Button::GetWidth()
 {
     return ButtonWidth;
 }
-
-int Button::getHeight()
+int Button::GetHeight()
 {
     return height;
 }
-
-string Button::getText()
+string Button::GetText()
 {
     return text;
 }
 
-void Button::changeState(State val)
+void Button::ChangeState(State val)
 {
     state=val;
 }
-bool Button::clicked()
+bool Button::Clicked()
 {
-    return (state == Clicked);
+    return (state == 2);
 }
 Button::~Button()
 {
@@ -129,7 +125,7 @@ void Button::operator = (const Button& cpy)
     text=cpy.text;
     spriteClips[Normal]=cpy.spriteClips[Normal];
     spriteClips[Hover]=cpy.spriteClips[Hover];
-    spriteClips[Clicked]=cpy.spriteClips[Clicked];
+    spriteClips[2]=cpy.spriteClips[2];
     width=cpy.width;
     height=cpy.height;
     ButtonWidth = cpy.ButtonWidth;

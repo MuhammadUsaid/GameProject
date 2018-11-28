@@ -39,7 +39,7 @@
 1543014315 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.h
 	"Screen.h"
 
-1543313184 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\screen.h
+1543412673 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\screen.h
 	"SDL2/SDL.h"
 
 1543014605 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.cpp
@@ -50,7 +50,7 @@
 	<SDL2/SDL_image.h>
 	"Game.h"
 
-1543406151 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
+1543414388 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
 	"Game.h"
 	<SDL2/SDL_image.h>
 	"SplashScreen.h"
@@ -59,7 +59,7 @@
 	"QuitScreen.h"
 	"PauseScreen.h"
 
-1543319007 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
+1543412999 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
 	"MenuScreen.h"
 	"TextManager.h"
 	"Button.h"
@@ -68,28 +68,28 @@
 	"Screen.h"
 	"Button.h"
 
-1543010059 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.h
+1543412673 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.h
 	"Word.h"
 
-1543009919 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\word.h
+1543412673 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\word.h
 	"Character.h"
 
-1543011081 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.h
+1543412673 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.h
 	<SDL2/SDL.h>
 	<iostream>
 
-1543009992 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\word.cpp
+1543413418 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\word.cpp
 	"Word.h"
 
 1543010360 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.cpp
 	"Character.h"
 	"Game.h"
 
-1543011247 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.cpp
+1543414346 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.cpp
 	"Button.h"
 	"Game.h"
 
-1543406336 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
+1543417787 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
 	"Player.h"
 	"TextManager.h"
 
@@ -99,14 +99,14 @@
 1543403266 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\basecharacter.h
 	"GameObject.h"
 
-1543067982 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
-	"SDL2/SDL.h"
+1543416587 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
+	<SDL2/SDL.h>
 
-1543404037 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
+1543417007 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
 	"HallScreen.h"
 	"TextManager.h"
 
-1543403700 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
+1543418127 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
 	"Screen.h"
 	"Player.h"
 	"Health.h"
@@ -115,7 +115,7 @@
 	"Screen.h"
 	"Button.h"
 
-1543402234 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\quitscreen.cpp
+1543413597 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\quitscreen.cpp
 	"QuitScreen.h"
 	"TextManager.h"
 
@@ -123,15 +123,19 @@
 	"Screen.h"
 	"Button.h"
 
-1543402321 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\pausescreen.cpp
+1543413418 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\pausescreen.cpp
 	"PauseScreen.h"
 	"TextManager.h"
 
-1543406306 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\health.cpp
+1543417007 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\health.cpp
 	"Health.h"
 	"Game.h"
 	"Player.h"
 
 1543404017 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\health.h
 	<SDL2/SDL.h>
+
+1543416512 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.cpp
+	"GameObject.h"
+	"TextManager.h"
 

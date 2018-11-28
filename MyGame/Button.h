@@ -22,10 +22,10 @@ public:
     ~Button();
     int GetX();
     int GetY();
-    int getWidth();
-    int getHeight();
-    std::string getText(); //get the text of the button
-    void changeState(State); //changes the current state of the button
+    int GetWidth();
+    int GetHeight();
+    std::string GetText(); //get the text of the button
+    void ChangeState(State); //changes the current state of the button
     void operator = (const Button& cpy); //operator overloading for assignment operator
-    bool clicked(); //tells whether button is clicked or not
+    bool Clicked(); //tells whether button is clicked or not
 };

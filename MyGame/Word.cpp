@@ -35,7 +35,7 @@ void Word::Render()
     }
 }
 
-int Word::getLength()
+int Word::GetLength()
 {
     return wordLen;
 }
@@ -51,12 +51,12 @@ Word::~Word()
 
 }
 
-int Word::getWidth()
+int Word::GetWidth()
 {
     return width;
 }
 
-void Word::changeWord(std::string text)
+void Word::ChangeWord(std::string text)
 {
     this->text = text;
     width = 0;

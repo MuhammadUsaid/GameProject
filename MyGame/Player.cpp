@@ -10,7 +10,7 @@ Player::Player()
     y = 730;
     alive = true;
     health = 20;
-    speed = 3;
+    speed = 10;
     width = 32;
     height = 32;
     srcRect = {150, 0, 50, 50};
@@ -47,7 +47,8 @@ bool Player::CompareRects(SDL_Rect a, SDL_Rect b)
 
 void Player::MoveUp()
 {
-    y -= speed;
+    if (y > 0)
+        y -= speed;
     for(int i = 0; i < 3; i++)
     {
         if ( CompareRects(moveUp[i], srcRect) )
@@ -61,7 +62,8 @@ void Player::MoveUp()
 
 void Player::MoveDown()
 {
-    y += speed;
+    if (y < 768 - height)
+        y += speed;
     for(int i = 0; i < 3; i++)
     {
         if ( CompareRects(moveDown[i], srcRect) )
@@ -74,7 +76,10 @@ void Player::MoveDown()
 }
 void Player::MoveRight()
 {
-    x += speed;
+    if(x < 800 - width)
+    {
+        x += speed;
+    }
     for(int i = 0; i < 3; i++)
     {
         if ( CompareRects(moveRight[i], srcRect) )
@@ -87,7 +92,10 @@ void Player::MoveRight()
 }
 void Player::MoveLeft()
 {
-    x -= speed;
+    if(x > 260)
+    {
+        x -= speed;
+    }
     for(int i = 0; i < 3; i++)
     {
         if ( CompareRects(moveLeft[i], srcRect) )

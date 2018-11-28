@@ -17,9 +17,9 @@ public:
     Word(std::string, SDL_Texture*, float, float );
     ~Word();
     void Render(); //to draw the word on screen
-    int getLength();
-    int getWidth();
-    void changeWord(std::string);  //changes the text of the Word
+    int GetLength();
+    int GetWidth();
+    void ChangeWord(std::string);  //changes the text of the Word
     void operator = (const Word&); //operating overloading for assignment operator.
-    std::string getText() {return text;} //used to get text of the word
+    std::string GetText() {return text;} //used to get text of the word
 };

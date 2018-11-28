@@ -4,7 +4,7 @@
 
 Health::Health()
 {
-    int x = 10;
+    int x = 300;
     int y = 10;
     health = Player::GetInstance()->GetHealth();
     barLength = health;

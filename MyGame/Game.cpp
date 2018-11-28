@@ -15,7 +15,7 @@ Game::Game()
     height = 768;
     Init();
     //ShowSplash();
-    currentScreen = new MenuScreen;
+    currentScreen = new HallScreen;
     pauseScreen = nullptr;
 }
 
@@ -72,13 +72,13 @@ void Game::HandleEvents()
     if(pauseScreen == nullptr)
     {
         currentScreen->HandleEvents();
-        running = currentScreen->isRunning();
+        running = currentScreen->IsRunning();
         state = currentScreen->GetState();
     }
     else
     {
         pauseScreen->HandleEvents();
-        running = pauseScreen->isRunning();
+        running = pauseScreen->IsRunning();
         state = pauseScreen->GetState();
     }
 }
