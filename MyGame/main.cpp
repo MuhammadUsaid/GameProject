@@ -15,7 +15,6 @@ int main(int argc, char* argv[])
         frameStart = SDL_GetTicks();  //Calculate the milliseconds since the SDL starts
         game.HandleEvents();
         game.Update();
-        cout << Screen::pause << '\t';
         game.Render();
         frameTime = SDL_GetTicks() - frameStart; //Calculate the difference between every instance
         /** Limiting Frame Rate To 60 FPS **/

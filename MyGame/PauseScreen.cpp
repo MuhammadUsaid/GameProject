@@ -7,10 +7,10 @@ PauseScreen::PauseScreen()
     running = true;
     Screen::pause = 3;
     fontSheet = TextureManager::LoadTexture("Images/font.png");
-    resumeButton = new Button(fontSheet, " Resume ", 500, 400);
-    saveButton = new Button(fontSheet, "Save Game", 500, 500);
-    mainMenuButton = new Button(fontSheet, "Main Menu", 500, 600);
-    quitGameButton = new Button(fontSheet, "Quit Game", 500, 700);
+    resumeButton = new Button(fontSheet, " Resume ", 500, 200);
+    saveButton = new Button(fontSheet, "Save Game", 500, 300);
+    mainMenuButton = new Button(fontSheet, "Main Menu", 500, 400);
+    quitGameButton = new Button(fontSheet, "Quit Game", 500, 500);
 }
 
 void PauseScreen::HandleEvents()

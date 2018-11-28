@@ -9,7 +9,7 @@ Player::Player()
     x = 512;
     y = 730;
     alive = true;
-    health = 100;
+    health = 20;
     speed = 3;
     width = 32;
     height = 32;

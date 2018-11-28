@@ -8,10 +8,10 @@ QuitScreen::QuitScreen()
     Screen::pause = 0;
     backGround = TextureManager::LoadTexture("Images/quit.jpeg");
     fontSheet = TextureManager::LoadTexture("Images/font.png");
-    newGameButton = new Button(fontSheet, " Restart ", 500, 400);
-    loadGameButton = new Button(fontSheet, "Load Game", 500, 500);
-    mainMenuButton = new Button(fontSheet, "Main Menu", 500, 600);
-    quitGameButton = new Button(fontSheet, "Quit Game", 500, 700);
+    newGameButton = new Button(fontSheet, " Restart ", 800, 300);
+    loadGameButton = new Button(fontSheet, "Load Game", 800, 400);
+    mainMenuButton = new Button(fontSheet, "Main Menu", 800, 500);
+    quitGameButton = new Button(fontSheet, "Quit Game", 800, 600);
 }
 
 void QuitScreen::HandleEvents()

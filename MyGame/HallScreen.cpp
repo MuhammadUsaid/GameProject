@@ -1,9 +1,13 @@
 #include "HallScreen.h"
+#include "TextManager.h"
+
 
 HallScreen::HallScreen()
 {
     state = 0;
     player = Player::GetInstance();
+    healthBar = new Health;
+    backGround = TextureManager::LoadTexture("Images/hall.jpg");
     running = true;
     Screen::pause = 0;
 }
@@ -47,12 +51,16 @@ void HallScreen::HandleEvents()
 void HallScreen::Update()
 {
     player->Update();
+    healthBar->Update();
 }
 void HallScreen::Render()
 {
+    SDL_RenderCopy(Game::renderer, backGround, nullptr, nullptr);
+    healthBar->Render();
     player->Render();
 }
 HallScreen::~HallScreen()
 {
     delete player;
+    delete healthBar;
 }
