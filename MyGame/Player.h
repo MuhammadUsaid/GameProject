@@ -20,4 +20,5 @@ public:
     void MoveDown();
     void MoveRight();
     void MoveLeft();
+    ~Player();
 };

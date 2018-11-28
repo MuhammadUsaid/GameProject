@@ -3,16 +3,20 @@
 #include "SplashScreen.h"
 #include "MenuScreen.h"
 #include "HallScreen.h"
+#include "QuitScreen.h"
+#include "PauseScreen.h"
 
 SDL_Renderer* Game::renderer = nullptr;
-
+int Screen::pause = 0;
 Game::Game()
 {
+    state = 0;
     width = 1024;
     height = 768;
     Init();
-    //ShowSplash();
-    currentScreen = new HallScreen;
+    ShowSplash();
+    currentScreen = new MenuScreen;
+    pauseScreen = nullptr;
 }
 
 /****Method To Initialize Everything and show error if something fails****/
@@ -65,12 +69,52 @@ void Game::ShowSplash()
 
 void Game::HandleEvents()
 {
-    currentScreen->HandleEvents();
-    running = currentScreen->isRunning();
+    if(pauseScreen == nullptr)
+    {
+        currentScreen->HandleEvents();
+        running = currentScreen->isRunning();
+        state = currentScreen->GetState();
+    }
+    else
+    {
+        pauseScreen->HandleEvents();
+        running = pauseScreen->isRunning();
+        state = pauseScreen->GetState();
+    }
 }
 void Game::Update()
 {
-    currentScreen->Update();
+    switch(state)
+    {
+    case 1:
+        delete currentScreen;
+        currentScreen = new HallScreen;
+        break;
+    case 2:
+        delete currentScreen;
+        delete pauseScreen;
+        pauseScreen = nullptr;
+        currentScreen = new MenuScreen;
+        break;
+    case 3:
+        delete currentScreen;
+        currentScreen = new QuitScreen;
+    default:
+        if(Screen::pause == 0)
+        {
+            currentScreen->Update();
+        }
+        else if(Screen::pause == 1)
+        {
+            pauseScreen = new PauseScreen;
+        }
+        else if(Screen::pause == 2)
+        {
+            delete pauseScreen;
+            pauseScreen = nullptr;
+            Screen::pause = 0;
+        }
+    }
 }
 
 /**** Method To Render All The Objects On Screen ****/
@@ -79,6 +123,10 @@ void Game::Render()
 {
     SDL_RenderClear(renderer);
     currentScreen->Render();
+    if(pauseScreen != nullptr)
+    {
+        pauseScreen->Render();
+    }
     SDL_RenderPresent(renderer);
 }
 
@@ -90,5 +138,6 @@ Game::~Game()
     renderer = nullptr;
     SDL_Quit();
     delete currentScreen;
+    delete pauseScreen;
 }
 

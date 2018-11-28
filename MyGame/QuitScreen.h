@@ -2,18 +2,19 @@
 #include "Screen.h"
 #include "Button.h"
 
-class MenuScreen: public Screen
+class QuitScreen: public Screen
 {
 private:
     Button* newGameButton;
     Button* loadGameButton;
+    Button* mainMenuButton;
     Button* quitGameButton;
     SDL_Texture* fontSheet;
     int mouseX, mouseY;
 public:
-    MenuScreen();
+    QuitScreen();
     void HandleEvents();
-    void Update();
     void Render();
-    ~MenuScreen();
+    void Update();
+    ~QuitScreen();
 };

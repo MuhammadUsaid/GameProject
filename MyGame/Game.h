@@ -14,6 +14,7 @@ public:
     /** Attributes **/
     static SDL_Renderer* renderer;
     Screen* currentScreen;
+    Screen* pauseScreen;
     int width;
     int height;
     /** Methods **/
@@ -26,6 +27,7 @@ public:
 private:
     bool running;
     SDL_Window* window;
+    int state;
     void Init();
     void ShowSplash(); //To show splash screen for 3 seconds
 };

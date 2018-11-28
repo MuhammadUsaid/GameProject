@@ -2,8 +2,10 @@
 
 HallScreen::HallScreen()
 {
+    state = 0;
     player = Player::GetInstance();
     running = true;
+    Screen::pause = 0;
 }
 
 void HallScreen::HandleEvents()
@@ -20,7 +22,10 @@ void HallScreen::HandleEvents()
             switch(e.key.keysym.sym)
             {
             case SDLK_ESCAPE:
-                //running = false;
+                state = 3;
+                break;
+            case SDLK_p:
+                Screen::pause = 1;
                 break;
             case SDLK_UP:
                 player->MoveUp();

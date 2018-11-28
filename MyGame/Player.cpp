@@ -27,22 +27,14 @@ Player* Player::GetInstance()
 }
 void Player::SetClips()
 {
-    moveUp[0] = {0, 200, 50, 50};
-    moveUp[1] = {50, 200, 50, 50};
-    moveUp[2] = {100, 200, 50, 50};
-    moveUp[3] = {150, 200, 50, 50};
-    moveDown[0] = {0, 150, 50, 50};
-    moveDown[1] = {50, 150, 50, 50};
-    moveDown[2] = {100, 150, 50, 50};
-    moveDown[3] = {150, 150, 50, 50};
-    moveRight[0] = {0, 50, 50, 50};
-    moveRight[1] = {50, 50, 50, 50};
-    moveRight[2] = {100, 50, 50, 50};
-    moveRight[3] = {150, 50, 50, 50};
-    moveLeft[0] = {0, 100, 50, 50};
-    moveLeft[1] = {50, 100, 50, 50};
-    moveLeft[2] = {100, 100, 50, 50};
-    moveLeft[3] = {150, 100, 50, 50};
+    int i = 0;
+    for(i; i < 4; i++)
+    {
+        moveUp[i] = {i * 50, 200, 50, 50};
+        moveDown[i] = {i * 50, 150, 50, 50};
+        moveRight[i] = {i * 50, 50, 50, 50};
+        moveLeft[i] = {i * 50, 100, 50, 50};
+    }
 }
 bool Player::CompareRects(SDL_Rect a, SDL_Rect b)
 {
@@ -113,4 +105,8 @@ void Player::Update()
 void Player::Render()
 {
     SDL_RenderCopy(Game::renderer, texture, &srcRect, &dstRect);
+}
+Player::~Player()
+{
+    instance = nullptr;
 }

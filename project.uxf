@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1300</x>
+      <y>100</y>
+      <w>300</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Game
+--
+-currentScreen: Screen*
+-renderer: SDL_Renderer*
+-running: bool
+--
++Init(int width, int height): void
++HandleEvents(): void
++Update(): void
++Clean(): void
++Render(): void
++IsRunning(): bool
++Load() : void
++Save(): void
++Resume(): void
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>340</y>
+      <w>210</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>/BaseCharacter/
+--
+-speed : int
+-health : int
+-alive : bool
+-weapons : Weapon*
+--
++Speak(): void
++Throw(): void
++Blink(): void
++LoseHealth(): void 
++Fall(): void
++Die(): void
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>640</y>
+      <w>230</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+-inventory: GameObject*
+-instance: Player
+--
++GetInstance(): Player*
++Die(): void
++WearLabcoat() : void
++AddInventory(GameObject): void
++CloseDoor(): void
++PickupChair(): void
++ThrowChair(): void
++CheckFurniture(): bool
++Hide(GameObject&amp;): void
++DisplayInventory(): void
++RemoveFromInventory(): void
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>980</x>
+      <y>600</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>340</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>/Weapon/
+--
+-power: int
+-range: int
+--
++Render(SDL_Renderer*): void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>220</y>
+      <w>200</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Enemies
+--
+-range: int
+-player: Player*
+-vision: int
+--
++DetectPlayer(Player&amp;): bool
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>300</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1140</x>
+      <y>120</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Staff
+--
+-key: Key*
+--
++RingAlarm(): void
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1080</x>
+      <y>150</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>490</y>
+      <w>250</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>/GameObject/
+--
+#x: int
+#y: int
+#texture: SDL_Texture*
+#width int
+#heigth: int
+#src: SDL_Rect
+#dst: SDL_Rect
+
+--
++Render(SDL_Renderer*): virtual void
+HandleEvents()
+Update()
+
+
+
++CollisionDetection(): bool
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>590</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1150</x>
+      <y>640</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Button
+--
+-position: Point
+-buttonRect[3]: SDL_Rect
+-buttonTexture: LoadTexture*
++word: Word
+--
++Render(SDL_Renderer*): void
++SetPosition(Point&amp;): void
++SetText(const char*): void
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1150</x>
+      <y>430</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Word
+--
+-position: Point
+-renderWord: char*
+-textTexture: LoadTexture*
+-characters: Character*
+--
++Render(SDL_Renderer* ): void
++SetText(char*): void
++SetPosition(Point&amp; ): void
++GetTextLength(): int
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1480</x>
+      <y>640</y>
+      <w>180</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>LoadTexture
+--
+-texture: SDL_Texture*
+-width: int
+-height: int
+--
++Free(): void
++Render(): void
++LoadFile(const char*): bool
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1400</x>
+      <y>430</y>
+      <w>250</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Character
+--
+-position: Point
+-charRect: SDL_Rect
+-shownChar: char
+-CharTexture: LoadTexture*
+--
++Render(SDL_Renderer* ):void
++SetPosition(Point&amp; ): void
++SetChar(char): void
++SetTexture(LoadTexture*, char): void
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1650</x>
+      <y>60</y>
+      <w>250</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>/Screen/
+--
+#background: SDL_Texture*
+#running: bool
+#state: int
+_+state: int_
+--
+/+Update(): void/
+/+HandleEvents(): void/
+/+Render(SDL_Renderer* ): void/
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>450</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>130</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Guard
+--
++BreakDoor(Door&amp;): void
++Hit(Player&amp;): void
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>750</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Door
+--
+-lock:bool
+-close: bool
+-key: Key*
+--
++IsLocked():bool
++Render(SDL_Renderer*): void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>130</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>/PlayerChaser/
+--
++ChasePlayer(Player&amp;): bool
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>280</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>ObjectFactory
+--
++GetObject(int): GameObject*
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>180</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>160</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>240</y>
+      <w>80</w>
+      <h>620</h>
+    </coordinates>
+    <panel_attributes>lt=-
+hits v</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0;10.0;600.0;60.0;600.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>760</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Cupboard
+--
++Open(): void
++Close(): void
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>770</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>670</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Chair
+--
++Render(SDL_Renderer*): void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>670</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Bed
+--
+-isEmpty: bool
+--
++Render(SDL_Renderer*): void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>730</x>
+      <y>660</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>590</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Key
+--
++Render(SDL_Renderer*): void
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1730</x>
+      <y>440</y>
+      <w>190</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>MenuScreen
+--
+-fontSheet: SDL_Texture*
+-newGameButton: Button*
+-loadGameButton: Button*
+-quitGaemButton: Button*
+-mouseX: int
+-mouseY: int
+--
++Update(): void
++HandleEvents(): void
++Render(SDL_Renderer* ): void
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1810</x>
+      <y>280</y>
+      <w>190</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>PauseScreen
+--
+-fontSheet: SDL_Texture*
+-resumeButton: Button*
+-saveButton: Button*
+-mainMenuButton: Button*
+-quitGaemButton: Button*
+-mouseX: int
+-mouseY: int
+--
++Update(): void
++HandleEvents(): void
++Render(SDL_Renderer* ): void
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1560</x>
+      <y>310</y>
+      <w>190</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>QuitScreen
+--
+-fontSheet: SDL_Texture*
+-newGameButton: Button*
+-loadGameButton: Button*
+-mainMenuButton: Button*
+-quitGaemButton: Button*
+-mouseX: int
+-mouseY: int
+--
++Update(): void
++HandleEvents(): void
++Render(SDL_Renderer* ): void
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1990</x>
+      <y>470</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>HallScreen
+--
+-enemiesList: List*
+-objectsList: List*
+--
++Pause(): void
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>480</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>LabCoat
+--
++Render(SDL_Renderer*): void
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>40</y>
+      <w>310</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>List
+--
+-head: Node*
+-tail: Node*
+-length: int
+--
++Append(GameObject*): void
++Insert(GameObject*, int): void
++Remove(int): GameObject*
++Render(SDL_Renderer*): void 
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1350</x>
+      <y>500</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1310</x>
+      <y>600</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1350</x>
+      <y>700</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>660</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>320</y>
+      <w>160</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;170.0;140.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>90</y>
+      <w>150</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Node
+--
++value: GameObject*
++next: Node*
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>90</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1590</x>
+      <y>160</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1300</x>
+      <y>410</y>
+      <w>430</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>410.0;10.0;410.0;410.0;10.0;410.0;10.0;380.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1280</x>
+      <y>620</y>
+      <w>560</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>540.0;10.0;540.0;230.0;10.0;230.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1220</x>
+      <y>410</y>
+      <w>730</w>
+      <h>490</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>710.0;10.0;710.0;470.0;10.0;470.0;10.0;380.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>20</y>
+      <w>1540</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>1520.0;450.0;1520.0;10.0;10.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1350</x>
+      <y>550</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0;30.0;130.0;130.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1520</x>
+      <y>590</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1740</x>
+      <y>200</y>
+      <w>80</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0;60.0;30.0;60.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1890</x>
+      <y>160</y>
+      <w>140</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1890</x>
+      <y>180</y>
+      <w>70</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0;50.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1680</x>
+      <y>200</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1170</x>
+      <y>550</y>
+      <w>880</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>860.0;10.0;860.0;410.0;10.0;410.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>600</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>500</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>390</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>550</y>
+      <w>100</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;210.0;10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>660</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2040</x>
+      <y>100</y>
+      <w>220</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>SplashScreen
+--
++Update(): void
++HandleEvents(): void
++Render(SDL_Renderer* ): void
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1890</x>
+      <y>100</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>530</y>
+      <w>200</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;430.0;180.0;430.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>520</y>
+      <w>150</w>
+      <h>460</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;110.0;10.0;110.0;440.0;10.0;440.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>590</y>
+      <w>450</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>430.0;10.0;430.0;390.0;10.0;390.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>740</y>
+      <w>410</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>340.0;10.0;390.0;10.0;390.0;230.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1030</x>
+      <y>100</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>50</y>
+      <w>1250</w>
+      <h>580</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>1230.0;70.0;1230.0;10.0;10.0;10.0;10.0;560.0;180.0;560.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>220</x>
+      <y>770</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+fg=white
+
+*	Do you really need doubly linked list?
+*	Wont the door open close?
+*	Multiplicity?
+*	Types of weapons?
+*	Saving and Loading
+*	Inventory needs to be a List
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>310</y>
+      <w>100</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Inventory</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>200</x>
+      <y>680</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Questions
+bg=red
+fg=white
+
+*	Health bar?
+*	Wont the door open close?
+*	Multiplicity?
+*	Types of weapons?
+*	Saving and Loading
+*	Should Inventory inherit from list?
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>950</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Point
+--
+-x: int
+-y: int
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -4,7 +4,9 @@
 
 MenuScreen::MenuScreen()
 {
+    state = 0;
     running = true;
+//    Screen::pause = 0;
     backGround = TextureManager::LoadTexture("Images/menu.png");
     fontSheet = TextureManager::LoadTexture("Images/font.png");
     newGameButton = new Button(fontSheet, " New Game ", 500, 400);
@@ -66,6 +68,7 @@ void MenuScreen::HandleEvents()
                 if(onNewGame)
                 {
                     newGameButton->changeState(Clicked);
+                    state = 1;
                 }
                 else if(onLoadGame)
                 {
@@ -74,6 +77,7 @@ void MenuScreen::HandleEvents()
                 else if(onQuitGame)
                 {
                     quitGameButton->changeState(Clicked);
+                    running = false;
                 }
             }
             break;
