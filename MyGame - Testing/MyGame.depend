@@ -1,0 +1,185 @@
+# depslib dependency file v1.0
+1542911401 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+
+1542911424 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\game.h
+	<iostream>
+	<SDL2/SDL.h>
+	"SplashScreen.h"
+
+1543317919 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\main.cpp
+	"Game.h"
+
+1542907940 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\textmanager.h
+	"Game.h"
+	<SDL2/SDL_image.h>
+
+1542912989 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\splashscreen.cpp
+	"SplashScreen.h"
+	"TextManager.h"
+
+1542968972 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\splashscreen.h
+	"Screen.h"
+
+1542911578 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\screen.h
+	"Game.h"
+
+1542911673 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\src\menuclass.cpp
+	"MenuClass.h"
+
+1542911729 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\menuclass.h
+	"Screen.h"
+
+1543317617 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.h
+	<iostream>
+	<SDL2/SDL.h>
+	"Screen.h"
+
+1543014315 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.h
+	"Screen.h"
+
+1543313184 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\screen.h
+	"SDL2/SDL.h"
+
+1543014605 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\splashscreen.cpp
+	"SplashScreen.h"
+	"TextManager.h"
+
+1543008757 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\textmanager.h
+	<SDL2/SDL_image.h>
+	"Game.h"
+
+1543319245 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+	"SplashScreen.h"
+	"MenuScreen.h"
+	"HallScreen.h"
+	"QuitScreen.h"
+	"PauseScreen.h"
+
+1543319007 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
+	"MenuScreen.h"
+	"TextManager.h"
+	"Button.h"
+
+1543079588 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543010059 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.h
+	"Word.h"
+
+1543009919 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\word.h
+	"Character.h"
+
+1543011081 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.h
+	<SDL2/SDL.h>
+	<iostream>
+
+1543009992 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\word.cpp
+	"Word.h"
+
+1543010360 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\character.cpp
+	"Character.h"
+	"Game.h"
+
+1543011247 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\button.cpp
+	"Button.h"
+	"Game.h"
+
+1543077169 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
+	"Player.h"
+	"TextManager.h"
+
+1543077193 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.h
+	"BaseCharacter.h"
+
+1543067996 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\basecharacter.h
+	"GameObject.h"
+
+1543067982 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
+	"SDL2/SDL.h"
+
+1543313392 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
+	"HallScreen.h"
+
+1543309548 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
+	"Screen.h"
+	"Player.h"
+
+1543397325 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\quitscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543313299 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\quitscreen.cpp
+	"QuitScreen.h"
+	"TextManager.h"
+
+1543312972 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\pausescreen.h
+	"Screen.h"
+	"Button.h"
+
+1543318908 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\pausescreen.cpp
+	"PauseScreen.h"
+	"TextManager.h"
+
+1543319245 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+	"SplashScreen.h"
+	"MenuScreen.h"
+	"HallScreen.h"
+	"QuitScreen.h"
+	"PauseScreen.h"
+
+1543317617 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\game.h
+	<iostream>
+	<SDL2/SDL.h>
+	"Screen.h"
+
+1543313184 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\screen.h
+	"SDL2/SDL.h"
+
+1543014315 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\splashscreen.h
+	"Screen.h"
+
+1543079588 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\menuscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543010059 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\button.h
+	"Word.h"
+
+1543009919 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\word.h
+	"Character.h"
+
+1543011081 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\character.h
+	<SDL2/SDL.h>
+	<iostream>
+
+1543309548 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\hallscreen.h
+	"Screen.h"
+	"Player.h"
+
+1543077193 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\player.h
+	"BaseCharacter.h"
+
+1543067996 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\basecharacter.h
+	"GameObject.h"
+
+1543067982 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\gameobject.h
+	"SDL2/SDL.h"
+
+1543397325 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\quitscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543312972 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\pausescreen.h
+	"Screen.h"
+	"Button.h"
+
+1543317919 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame - testing\main.cpp
+	"Game.h"
+
