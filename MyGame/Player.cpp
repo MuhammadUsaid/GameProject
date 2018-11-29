@@ -115,6 +115,5 @@ void Player::Render()
 }
 Player::~Player()
 {
-    delete instance;
     instance = nullptr;
 }

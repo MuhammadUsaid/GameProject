@@ -89,24 +89,24 @@
 	"Button.h"
 	"Game.h"
 
-1543472044 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
+1543474962 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
 	"Player.h"
 	"TextManager.h"
 
 1543077193 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.h
 	"BaseCharacter.h"
 
-1543403266 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\basecharacter.h
+1543475067 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\basecharacter.h
 	"GameObject.h"
 
 1543473515 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
 	<SDL2/SDL.h>
 
-1543474397 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
+1543475004 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
 	"HallScreen.h"
 	"TextManager.h"
 
-1543473684 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
+1543474787 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
 	"Screen.h"
 	"Player.h"
 	"Health.h"

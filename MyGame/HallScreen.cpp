@@ -17,23 +17,6 @@ HallScreen::HallScreen()
     running = true;
     Screen::pause = 0;
 }
-bool HallScreen::PointInRect(int x, int y, SDL_Rect rec)
-{
-    if (x >= rec.x && y >= rec.y && x <= (rec.x + rec.w) && y <= (rec.y + rec.h))
-    {
-        return true;
-    }
-    return false;
-}
-bool HallScreen::CheckCollision(SDL_Rect r1, SDL_Rect r2)
-{
-    if(PointInRect(r1.x, r1.y, r2) == true || PointInRect(r1.x + r1.w, r1.y, r2) == true ||
-        PointInRect(r1.x , r1.y + r1.h, r2) == true || PointInRect(r1.x + r1.w, r1.y + r1.h, r2) == true)
-    {
-        return true;
-    }
-    return false;
-}
 
 void HallScreen::HandleEvents()
 {

@@ -22,8 +22,6 @@ private:
     void InitializeWalls();
     void InitializeBeds();
     void AddObjects();
-    bool PointInRect(int x , int y, SDL_Rect);
-    bool CheckCollision(SDL_Rect, SDL_Rect);
 public:
     HallScreen();
     void HandleEvents();

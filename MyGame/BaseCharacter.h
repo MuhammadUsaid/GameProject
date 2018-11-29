@@ -12,5 +12,5 @@ public:
     int GetHealth(){ return health; }
     int GetSpeed(){ return speed; }
     void Attack();
-    ~BaseCharacter(){}
+    virtual ~BaseCharacter(){}
 };
