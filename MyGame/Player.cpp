@@ -76,7 +76,7 @@ void Player::MoveDown()
 }
 void Player::MoveRight()
 {
-    if(x < 800 - width)
+    if(x < 1024 - width)
     {
         x += speed;
     }
@@ -92,7 +92,7 @@ void Player::MoveRight()
 }
 void Player::MoveLeft()
 {
-    if(x > 260)
+    if(x > 0)
     {
         x -= speed;
     }

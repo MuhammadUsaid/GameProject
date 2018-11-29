@@ -89,7 +89,7 @@
 	"Button.h"
 	"Game.h"
 
-1543417787 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
+1543419344 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
 	"Player.h"
 	"TextManager.h"
 
@@ -102,7 +102,7 @@
 1543416587 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
 	<SDL2/SDL.h>
 
-1543417007 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
+1543418982 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
 	"HallScreen.h"
 	"TextManager.h"
 
