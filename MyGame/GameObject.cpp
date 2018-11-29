@@ -11,6 +11,10 @@ GameObject::GameObject(const char* path, int x, int y, int width, int height)
     this->height = height;
     dstRect = {x, y, width, height};
 }
+SDL_Rect GameObject::GetRect()
+{
+    return dstRect;
+}
 void GameObject::Update()
 {
 

@@ -3,13 +3,14 @@ using namespace std;
 
 ObjectList::ObjectList()
 {
-    head = NULL;
-    tail = NULL;
+    head = nullptr;
+    tail = nullptr;
+    length = 0;
 }
 
 ObjectList::~ObjectList()
 {
-    while(head != NULL)
+    while(head != nullptr)
     {
         Node* temp = head;
         head = head->next;
@@ -17,9 +18,13 @@ ObjectList::~ObjectList()
         delete temp;
     }
 }
-
+int ObjectList::GetLength()
+{
+    return length;
+}
 void ObjectList::Add(GameObject* value)
 {
+    length++;
     if(head == NULL)
     {
         head = new Node;
@@ -40,7 +45,7 @@ void ObjectList::Render()
     Node* temp = head;
     while(temp!=NULL)
     {
-        cout<<"here"<<endl;
+        //cout<<"here"<<endl;
         temp->data->Render();
         //cout<<"Value: "<<temp->data<<endl;
         temp=temp->next;

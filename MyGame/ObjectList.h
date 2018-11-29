@@ -10,10 +10,12 @@ class ObjectList
 private:
     Node* head;
     Node* tail;
+    int length;
 public:
     ObjectList();
     ~ObjectList();
     void Add(GameObject*);
+    int GetLength();
     //GameObject Remove();
     void Render();
 };

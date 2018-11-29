@@ -11,8 +11,8 @@ Player::Player()
     alive = true;
     health = 20;
     speed = 10;
-    width = 32;
-    height = 32;
+    width = 40;
+    height = 40;
     srcRect = {150, 0, 50, 50};
     SetClips();
 }
@@ -27,8 +27,7 @@ Player* Player::GetInstance()
 }
 void Player::SetClips()
 {
-    int i = 0;
-    for(i; i < 4; i++)
+    for(int i = 0; i < 4; i++)
     {
         moveUp[i] = {i * 50, 200, 50, 50};
         moveDown[i] = {i * 50, 150, 50, 50};
@@ -116,5 +115,6 @@ void Player::Render()
 }
 Player::~Player()
 {
+    delete instance;
     instance = nullptr;
 }

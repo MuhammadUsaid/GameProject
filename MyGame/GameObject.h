@@ -13,7 +13,8 @@ protected:
 public:
     GameObject();
     GameObject(const char* path, int x, int y, int width, int height);
-    void Update();
-    void Render();
+    SDL_Rect GetRect();
+    virtual void Update();
+    virtual void Render();
     ~GameObject();
 };
