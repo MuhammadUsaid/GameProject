@@ -9,8 +9,8 @@ HallScreen::HallScreen()
     healthBar = new Health;
     objList = new ObjectList;
     o = new ObjectFactory;
-    cupBoard = o->getObject(2, 500, 500, 40, 40);
-    object = o->getObject(1, 500, 500, 40, 40);
+    cupBoard = o->getObject(2,"Images/sprite.png", 500, 500, 40, 40);
+    object = o->getObject(1,"Images/sprite.png", 500, 500, 40, 40);
     InitializeWalls();
     InitializeChairs();
     InitializeBeds();
@@ -123,5 +123,5 @@ HallScreen::~HallScreen()
     delete healthBar;
     delete objList;
     delete o;
-    delete cupBoard;
+//    delete cupBoard;
 }

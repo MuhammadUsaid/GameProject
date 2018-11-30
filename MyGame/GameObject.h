@@ -1,9 +1,9 @@
 #pragma once
 #include <SDL2/SDL.h>
+enum TYPE{WALL, BED, CUPBOARD, CHAIR, TABLE, APPLE, INJECTION, SCISSORS, BANANAPEEL};
 class GameObject
 {
 protected:
-    enum TYPE{BED, CUPBOARD, CHAIR, WALL};
     int x;
     int y;
     int width;

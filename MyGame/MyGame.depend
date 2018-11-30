@@ -89,7 +89,7 @@
 	"Button.h"
 	"Game.h"
 
-1543557677 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
+1543559681 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\player.cpp
 	"Player.h"
 	"TextManager.h"
 
@@ -100,14 +100,14 @@
 1543475067 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\basecharacter.h
 	"GameObject.h"
 
-1543482439 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
+1543562832 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
 	<SDL2/SDL.h>
 
 1543482344 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
 	"HallScreen.h"
 	"TextManager.h"
 
-1543482310 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
+1543563108 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
 	"Screen.h"
 	"Player.h"
 	"Health.h"
@@ -115,6 +115,8 @@
 	"Bed.h"
 	"Cupboard.h"
 	"Chair.h"
+	"Table.h"
+	"ObjectFactory.h"
 	<iostream>
 
 1543397325 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\quitscreen.h
@@ -203,4 +205,30 @@
 
 1543559583 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\inventory.h
 	"Weapon.h"
+
+1543563461 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\objectfactory.h
+	"GameObject.h"
+
+1543562060 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\table.cpp
+	"Table.h"
+
+1543561931 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\table.h
+	"GameObject.h"
+
+1543563688 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\bananapeel.cpp
+	"BananaPeel.h"
+
+1543563751 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\bananapeel.h
+	"GameObject.h"
+
+1543563479 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\objectfactory.cpp
+	"ObjectFactory.h"
+	"Bed.h"
+	"Chair.h"
+	"Cupboard.h"
+	"Table.h"
+	"Apple.h"
+	"BananaPeel.h"
+	"Injection.h"
+	"Scissor.h"
 
