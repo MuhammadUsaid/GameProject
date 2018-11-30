@@ -9,6 +9,7 @@ Chair::Chair()
 Chair::Chair(const char* path, int x, int y, int width, int height):GameObject(path, x, y, width, height)
 {
     srcRect = {450, 290, 150, 150};
+    type = CHAIR;
 }
 
 void Chair::Render()

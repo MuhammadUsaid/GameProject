@@ -13,8 +13,13 @@ Player::Player()
     speed = 10;
     width = 40;
     height = 40;
+    weapons = new Weapon[10];
     srcRect = {150, 0, 50, 50};
     SetClips();
+}
+Weapon* Player::GetWeapons()
+{
+    return weapons;
 }
 
 Player* Player::GetInstance()

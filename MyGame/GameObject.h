@@ -3,10 +3,12 @@
 class GameObject
 {
 protected:
+    enum TYPE{BED, CUPBOARD, CHAIR, WALL};
     int x;
     int y;
     int width;
     int height;
+    int type;
     SDL_Texture* texture;
     SDL_Rect dstRect;
     SDL_Rect srcRect;

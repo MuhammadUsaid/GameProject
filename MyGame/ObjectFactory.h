@@ -1,51 +1,35 @@
-#ifndef OBJECTFACTORY_H
-#define OBJECTFACTORY_H
-
+#pragma once
+#include "GameObject.h"
 
 class ObjectFactory
 {
-    public:
-        ObjectFactory()
+private:
+    GameObject* object;
+public:
+    ObjectFactory()
+    {
+        object = nullptr;
+    }
+    GameObject* getObject(int type, int x, int y, int width, int height)
+    {
+        switch(type)
         {
-            object = NULL;
-        };
-        virtual ~ObjectFactory();
-        GameObject* getObject(int type, int x, int y, int width, int height)
-        {
-            if (type == 0)
-            {
-                object = new Enemy();
-            }
-            else if (type == 1)
-            {
-                object = new Weapon();
-            }
-            else if (type == 2)
-            {
-                object = new Bed();
-            }
-            else if (type == 3)
-            {
-                object = new Chair();
-            }
-            else if (type == 4)
-            {
-                object = new Key();
-            }
-            else if (type == 5)
-            {
-                object = new LabCoat();
-            }
-            else if (type == 6)
-            {
-                object = new Cupboard();
-            }
-            return object;
+        case 0:
+            object = new Bed("Images/sprites.png", x, y, width, height);
+            break;
+        case 1:
+            object = new Chair("Images/sprites.png", x, y, width, height);
+            break;
+        case 2:
+            object = new Cupboard("Images/sprites.png", x, y, width, height);
+            break;
+        case 3:
+            object = new GameObject("Images/wall.png", x, y, width, height);
+            break;
         }
-
-    protected:
-
-    private:
+        return object;
+    }
+    ~ObjectFactory(){}
 };
 
 #endif // OBJECTFACTORY_H

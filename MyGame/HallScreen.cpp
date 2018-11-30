@@ -8,6 +8,9 @@ HallScreen::HallScreen()
     player = Player::GetInstance();
     healthBar = new Health;
     objList = new ObjectList;
+    o = new ObjectFactory;
+    cupBoard = o->getObject(2, 500, 500, 40, 40);
+    object = o->getObject(1, 500, 500, 40, 40);
     InitializeWalls();
     InitializeChairs();
     InitializeBeds();
@@ -65,10 +68,12 @@ void HallScreen::Render()
     SDL_RenderCopy(Game::renderer, backGround, nullptr, nullptr);
     healthBar->Render();
     objList->Render();
+    cupBoard->Render();
     player->Render();
 }
 void HallScreen::InitializeCupboards()
 {
+//    cupboards[0] = o->getObject(2, 0, 200, 32, 45);
     cupboards[0] = new Cupboard("Images/sprite.png", 0, 200, 32, 45);
     cupboards[1] = new Cupboard("Images/sprite.png", 980, 200, 32, 45);
     cupboards[2] = new Cupboard("Images/sprite.png", 0, 600, 32, 45);
@@ -117,4 +122,6 @@ HallScreen::~HallScreen()
     delete player;
     delete healthBar;
     delete objList;
+    delete o;
+    delete cupBoard;
 }
