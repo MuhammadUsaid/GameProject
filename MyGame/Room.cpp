@@ -1,9 +1,9 @@
 #include "Room.h"
-#include "Player.h"
 #include "stdlib.h"
 
 Room::Room()
 {
+    state = 0;
     factory = new ObjectFactory;
     objectList = new ObjectList;
     const char* path = "Images/sprite.png";
@@ -31,7 +31,6 @@ void Room::Update()
 void Room::Render()
 {
     objectList->Render();
-    Player::GetInstance()->Render();
 }
 Room::~Room()
 {

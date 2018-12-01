@@ -4,20 +4,13 @@
 
 HallScreen::HallScreen()
 {
-    roomNumber = 0;
-    InitializeRooms();
+    roomNumber = 0; // 0 means we are in hallway
+   // InitializeRooms();
     state = 0;
     player = Player::GetInstance();
     healthBar = new Health;
-    objList = new ObjectList;
-    o = new ObjectFactory;
-    cupBoard = o->getObject(2,"Images/sprite.png", 500, 500, 40, 40);
-    object = o->getObject(1,"Images/sprite.png", 500, 500, 40, 40);
-    InitializeWalls();
-    InitializeChairs();
-    InitializeBeds();
-    InitializeCupboards();
-    AddObjects();
+    objectList = new ObjectList;
+    objectFactory = new ObjectFactory;
     backGround = TextureManager::LoadTexture("Images/hall.jpg");
     running = true;
     Screen::pause = 0;
@@ -31,7 +24,6 @@ void HallScreen::InitializeRooms()
 }
 void HallScreen::HandleEvents()
 {
-
     SDL_Event e;
     while(SDL_PollEvent(&e))
     {
@@ -44,7 +36,7 @@ void HallScreen::HandleEvents()
             switch(e.key.keysym.sym)
             {
             case SDLK_ESCAPE:
-                state = 3;
+                state = 1;
                 break;
             case SDLK_p:
                 Screen::pause = 1;
@@ -68,69 +60,63 @@ void HallScreen::HandleEvents()
 }
 void HallScreen::Update()
 {
+    if(player->GetHealth() <= 0)
+    {
+        state = 3;
+    }
+    switch(roomNumber)
+    {
+    case 1:
+        roomScreen[0]->Update();
+        break;
+    case 2:
+        roomScreen[1]->Update();
+        break;
+    case 3:
+        roomScreen[2]->Update();
+        break;
+    case 4:
+        roomScreen[3]->Update();
+        break;
+    default:
+//        enemyList->Update();
+        break;
+    }
     player->Update();
     healthBar->Update();
 }
 void HallScreen::Render()
 {
-    SDL_RenderCopy(Game::renderer, backGround, nullptr, nullptr);
+    switch(roomNumber)
+    {
+    case 1:
+        roomScreen[0]->Render();
+        break;
+    case 2:
+        roomScreen[1]->Render();
+        break;
+    case 3:
+        roomScreen[2]->Render();
+        break;
+    case 4:
+        roomScreen[3]->Render();
+        break;
+    default:
+        SDL_RenderCopy(Game::renderer, backGround, nullptr, nullptr);
+        //objectList->Render();
+        //enemyList->Render();
+        break;
+    }
     healthBar->Render();
-    objList->Render();
-    cupBoard->Render();
     player->Render();
-}
-void HallScreen::InitializeCupboards()
-{
-//    cupboards[0] = o->getObject(2, 0, 200, 32, 45);
-    cupboards[0] = new Cupboard("Images/sprite.png", 0, 200, 32, 45);
-    cupboards[1] = new Cupboard("Images/sprite.png", 980, 200, 32, 45);
-    cupboards[2] = new Cupboard("Images/sprite.png", 0, 600, 32, 45);
-    cupboards[3] = new Cupboard("Images/sprite.png", 980, 600, 32, 45);
-}
-void HallScreen::InitializeChairs()
-{
-    chairs[0] = new Chair("Images/sprite.png", 100, 200, 32, 32);
-    chairs[1] = new Chair("Images/sprite.png", 900, 200, 32, 32);
-    chairs[2] = new Chair("Images/sprite.png", 100, 600, 32, 32);
-    chairs[3] = new Chair("Images/sprite.png", 900, 600, 32, 32);
-}
-void HallScreen::InitializeBeds()
-{
-    beds[0] = new Bed("Images/sprite.png", 45,10, 40, 40);
-    beds[1] = new Bed("Images/sprite.png", 45,400, 40, 40);
-    beds[2] = new Bed("Images/sprite.png", 850,10, 40, 40);
-    beds[3] = new Bed("Images/sprite.png", 859,400, 40, 40);
-}
-void HallScreen::InitializeWalls()
-{
-    walls[0] = new GameObject("Images/wall.png", 250, 0, 10, 175);
-    walls[1] = new GameObject("Images/wall.png", 800, 0, 10, 175);
-    walls[2] = new GameObject("Images/wall.png", 0, 375, 250, 10); //horizontal wall
-    walls[3] = new GameObject("Images/wall.png", 800, 375, 250, 10); //horizontal wall
-    walls[4] = new GameObject("Images/wall.png", 250, 220, 10, 350);
-    walls[5] = new GameObject("Images/wall.png", 250, 615, 10, 153);
-    walls[6] = new GameObject("Images/wall.png", 800, 220, 10, 350);
-    walls[7] = new GameObject("Images/wall.png", 800, 615, 10, 153);
-}
-void HallScreen::AddObjects()
-{
-    for (int i = 0; i < 8; i++)
-    {
-        objList->Add(walls[i]);
-    }
-    for (int i = 0; i < 4; i++)
-    {
-        objList->Add(beds[i]);
-        objList->Add(cupboards[i]);
-        objList->Add(chairs[i]);
-    }
 }
 HallScreen::~HallScreen()
 {
+    SDL_DestroyTexture(backGround);
     delete player;
     delete healthBar;
-    delete objList;
-    delete o;
+    delete objectList;
+    delete enemyList;
+    delete objectFactory;
     delete[] roomScreen;
-//    delete cupBoard;
 }
