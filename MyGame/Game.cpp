@@ -16,7 +16,7 @@ Game::Game()
     height = 768;
     Init();
     //ShowSplash();
-    currentScreen = new MenuScreen;
+    currentScreen = new Room;
     pauseScreen = nullptr;
 }
 
