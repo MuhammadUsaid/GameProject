@@ -5,6 +5,7 @@
 #include "HallScreen.h"
 #include "QuitScreen.h"
 #include "PauseScreen.h"
+#include "Room.h"
 
 SDL_Renderer* Game::renderer = nullptr;
 int Screen::pause = 0;
@@ -15,7 +16,7 @@ Game::Game()
     height = 768;
     Init();
     //ShowSplash();
-    currentScreen = new HallScreen;
+    currentScreen = new Room;
     pauseScreen = nullptr;
 }
 
@@ -46,7 +47,7 @@ void Game::Init()
         cerr << "Renderer Not Created! " << SDL_GetError() << endl;
         return;
     }
-    SDL_SetRenderDrawColor(renderer, 0,0,0,255);
+    SDL_SetRenderDrawColor(renderer, 255,0,0,255);
     running = true;
 }
 

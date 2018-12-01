@@ -10,10 +10,13 @@
 #include "ObjectFactory.h"
 #include <iostream>
 
-
 class HallScreen: public Screen
 {
 private:
+    int roomNumber;
+    Screen* roomScreen[4];
+    void InitializeRooms();
+protected:
     ObjectList* objList;
     ObjectFactory* o;
     GameObject* object;

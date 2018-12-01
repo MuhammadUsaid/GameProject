@@ -2,7 +2,7 @@
 
 Apple::Apple(){}
 
-Apple::Apple(const char* path, int x, int y, int width, int height, int power, int range)
+Apple::Apple(const char* path, int x, int y, int width, int height, int power, int range):Weapon(path, x, y, width, height, power, range)
 {
     srcRect =  {750, 370, 100, 90};
 }

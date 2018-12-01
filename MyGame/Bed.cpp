@@ -7,7 +7,7 @@ Bed::Bed()
 }
 Bed::Bed(const char* path, int x, int y, int width, int height):GameObject(path, x, y, width, height)
 {
-    srcRect = {0, 0, 925/3, 864/3};
+    srcRect = {0, 0, 330, 260};
     type =  BED;
 }
 

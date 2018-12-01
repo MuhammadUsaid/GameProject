@@ -15,6 +15,10 @@ protected:
 public:
     GameObject();
     GameObject(const char* path, int x, int y, int width, int height);
+    int GetX();
+    int GetY();
+    int GetWidth();
+    int GetHeight();
     SDL_Rect GetRect();
     virtual void Update();
     virtual void Render();

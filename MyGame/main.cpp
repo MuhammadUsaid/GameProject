@@ -1,8 +1,10 @@
 #include "Game.h"
+#include "time.h"
 using namespace std;
 
 int main(int argc, char* argv[])
 {
+    srand(time(NULL));
     /** Stuff To Limit Frame Rate **/
     const int FPS = 60;
     const int frameDelay = 1000 / FPS;

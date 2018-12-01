@@ -15,6 +15,22 @@ SDL_Rect GameObject::GetRect()
 {
     return dstRect;
 }
+int GameObject::GetX()
+{
+    return x;
+}
+int GameObject::GetY()
+{
+    return y;
+}
+int GameObject::GetWidth()
+{
+    return width;
+}
+int GameObject::GetHeight()
+{
+    return height;
+}
 void GameObject::Update()
 {
 

@@ -1,9 +1,11 @@
 #include "HallScreen.h"
 #include "TextManager.h"
-
+#include "Room.h"
 
 HallScreen::HallScreen()
 {
+    roomNumber = 0;
+    InitializeRooms();
     state = 0;
     player = Player::GetInstance();
     healthBar = new Health;
@@ -20,7 +22,13 @@ HallScreen::HallScreen()
     running = true;
     Screen::pause = 0;
 }
-
+void HallScreen::InitializeRooms()
+{
+    roomScreen[0] = new Room;
+    roomScreen[1] = new Room;
+    roomScreen[2] = new Room;
+    roomScreen[3] = new Room;
+}
 void HallScreen::HandleEvents()
 {
 
@@ -123,5 +131,6 @@ HallScreen::~HallScreen()
     delete healthBar;
     delete objList;
     delete o;
+    delete[] roomScreen;
 //    delete cupBoard;
 }

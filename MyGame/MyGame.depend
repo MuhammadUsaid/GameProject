@@ -8,8 +8,9 @@
 	<SDL2/SDL.h>
 	"SplashScreen.h"
 
-1543402264 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\main.cpp
+1543652460 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\main.cpp
 	"Game.h"
+	"time.h"
 
 1542907940 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\include\textmanager.h
 	"Game.h"
@@ -50,7 +51,7 @@
 	<SDL2/SDL_image.h>
 	"Game.h"
 
-1543414388 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
+1543652714 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\game.cpp
 	"Game.h"
 	<SDL2/SDL_image.h>
 	"SplashScreen.h"
@@ -58,6 +59,7 @@
 	"HallScreen.h"
 	"QuitScreen.h"
 	"PauseScreen.h"
+	"Room.h"
 
 1543412999 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\menuscreen.cpp
 	"MenuScreen.h"
@@ -100,14 +102,15 @@
 1543475067 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\basecharacter.h
 	"GameObject.h"
 
-1543562832 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
+1543650941 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.h
 	<SDL2/SDL.h>
 
-1543482344 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
+1543642771 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.cpp
 	"HallScreen.h"
 	"TextManager.h"
+	"Room.h"
 
-1543563108 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
+1543642575 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\hallscreen.h
 	"Screen.h"
 	"Player.h"
 	"Health.h"
@@ -143,24 +146,24 @@
 1543404017 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\health.h
 	<SDL2/SDL.h>
 
-1543473563 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.cpp
+1543650974 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\gameobject.cpp
 	"GameObject.h"
 	"TextManager.h"
 
-1543473787 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\objectlist.h
+1543651799 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\objectlist.h
 	"GameObject.h"
 
 1543473804 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\objectlist.cpp
 	"ObjectList.h"
 
-1543482174 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\bed.cpp
+1543653075 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\bed.cpp
 	"Bed.h"
 	"TextManager.h"
 
 1543470097 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\bed.h
 	"GameObject.h"
 
-1543482157 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\cupboard.cpp
+1543653180 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\cupboard.cpp
 	"Cupboard.h"
 	"TextManager.h"
 
@@ -170,14 +173,14 @@
 1543471383 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\chair.h
 	"GameObject.h"
 
-1543482223 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\chair.cpp
+1543653003 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\chair.cpp
 	"Chair.h"
 	"TextManager.h"
 
 1543558751 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\weapon.h
 	"GameObject.h"
 
-1543559462 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\apple.cpp
+1543652250 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\apple.cpp
 	"Apple.h"
 
 1543558787 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\apple.h
@@ -209,10 +212,11 @@
 1543563461 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\objectfactory.h
 	"GameObject.h"
 
-1543562060 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\table.cpp
+1543652376 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\table.cpp
 	"Table.h"
+	"Game.h"
 
-1543561931 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\table.h
+1543652364 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\table.h
 	"GameObject.h"
 
 1543563688 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\bananapeel.cpp
@@ -231,4 +235,14 @@
 	"BananaPeel.h"
 	"Injection.h"
 	"Scissor.h"
+
+1543651506 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\room.h
+	"Screen.h"
+	"ObjectFactory.h"
+	"ObjectList.h"
+
+1543651882 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\mygame\room.cpp
+	"Room.h"
+	"Player.h"
+	"stdlib.h"
 
