@@ -9,6 +9,7 @@ protected:
     int width;
     int height;
     int type;
+    bool exists;
     SDL_Texture* texture;
     SDL_Rect dstRect;
     SDL_Rect srcRect;
@@ -19,11 +20,14 @@ public:
     int GetY();
     int GetWidth();
     int GetHeight();
+    bool GetExistence();
+    int GetType();
     virtual SDL_Texture* GetTexture();
     virtual SDL_Rect* GetSrc();
     SDL_Rect GetRect();
     void SetX(int);
     void SetY(int);
+    void SetExistence(bool);
     bool PointInRect(int,int,SDL_Rect);
     bool CheckCollision(SDL_Rect,SDL_Rect);
     virtual void Update();

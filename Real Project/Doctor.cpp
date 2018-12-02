@@ -11,6 +11,7 @@ Doctor::Doctor(int x, int y, bool up, bool down)
     this->x = x;
     this->y = y;
     counter = y;
+    exists = true;
     alive = true;
     health = 100;
     speed = 3;

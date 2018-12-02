@@ -46,7 +46,10 @@ void ObjectList::Render()
         Node* temp = head;
         while(temp!=NULL)
         {
-            temp->data->Render();
+            if(temp->data->GetExistence())
+            {
+                temp->data->Render();
+            }
             temp=temp->next;
         }
     }
@@ -58,7 +61,10 @@ void ObjectList::Update()
         Node* temp = head;
         while(temp!=NULL)
         {
-            temp->data->Update();
+            if(temp->data->GetExistence())
+            {
+                temp->data->Update();
+            }
             temp=temp->next;
         }
     }
@@ -115,14 +121,17 @@ bool ObjectList::CheckListCollision(SDL_Rect player, Player* playerObj)
     Node* temp = head;
     while(temp!=NULL)
     {
-        if (CheckCollisionHelper(temp->data->GetRect(),player) || CheckCollisionHelper(player, temp->data->GetRect()))
+        if(temp->data->GetExistence())
         {
-            playerObj->Top = CheckTop(temp->data->GetRect(),player);
-            playerObj->Bottom = CheckBottom(temp->data->GetRect(),player);
-            playerObj->Left = CheckLeft(temp->data->GetRect(),player);
-            playerObj->Right = CheckRight(temp->data->GetRect(),player);
-            playerObj->collidingWith = temp->data;
-            return true;
+            if (CheckCollisionHelper(temp->data->GetRect(),player) || CheckCollisionHelper(player, temp->data->GetRect()))
+            {
+                playerObj->Top = CheckTop(temp->data->GetRect(),player);
+                playerObj->Bottom = CheckBottom(temp->data->GetRect(),player);
+                playerObj->Left = CheckLeft(temp->data->GetRect(),player);
+                playerObj->Right = CheckRight(temp->data->GetRect(),player);
+                playerObj->collidingWith = temp->data;
+                return true;
+            }
         }
         temp=temp->next;
     }

@@ -9,6 +9,7 @@ GameObject::GameObject(const char* path, int x, int y, int width, int height)
     this->y = y;
     this->width = width;
     this->height = height;
+    exists = true;
     dstRect = {x, y, width, height};
 }
 SDL_Rect GameObject::GetRect()
@@ -31,9 +32,21 @@ int GameObject::GetHeight()
 {
     return height;
 }
+bool GameObject::GetExistence()
+{
+    return exists;
+}
+int GameObject::GetType()
+{
+    return type;
+}
 void GameObject::SetX(int x)
 {
     this->x = x;
+}
+void GameObject::SetExistence(bool a)
+{
+    exists = a;
 }
 SDL_Texture* GameObject::GetTexture(){ return texture; }
 SDL_Rect* GameObject::GetSrc(){ return &srcRect; }

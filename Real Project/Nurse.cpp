@@ -12,6 +12,7 @@ Nurse::Nurse(int x, int y, bool left, bool right)
     this->right = right;
     counter = x;
     alive = true;
+    exists = true;
     health = 100;
     speed = 3;
     width = 50;

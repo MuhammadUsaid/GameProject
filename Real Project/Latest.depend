@@ -520,7 +520,7 @@
 1543718285 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\weapon.h
 	"GameObject.h"
 
-1543730229 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\gameobject.h
+1543744547 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\gameobject.h
 	<SDL2/SDL.h>
 
 1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\bananapeel.cpp
@@ -580,7 +580,7 @@
 1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\cupboard.h
 	"GameObject.h"
 
-1543677770 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\doctor.cpp
+1543744966 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\doctor.cpp
 	"Doctor.h"
 	"TextManager.h"
 	<iostream>
@@ -597,7 +597,7 @@
 1543668024 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\scalpel.h
 	"Weapon.h"
 
-1543733053 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\player.h
+1543743317 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\player.h
 	"BaseCharacter.h"
 	"GameObject.h"
 
@@ -676,11 +676,11 @@
 	"ObjectFactory.h"
 	"ObjectList.h"
 
-1543719013 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\gameobject.cpp
+1543744579 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\gameobject.cpp
 	"GameObject.h"
 	"TextManager.h"
 
-1543742106 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\hallscreen.cpp
+1543744925 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\hallscreen.cpp
 	"HallScreen.h"
 	"TextManager.h"
 	"Room.h"
@@ -707,7 +707,7 @@
 	"TextManager.h"
 	"Button.h"
 
-1543677456 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\nurse.cpp
+1543745003 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\nurse.cpp
 	"Nurse.h"
 	"TextManager.h"
 	<iostream>
@@ -728,14 +728,14 @@
 1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\table.h
 	"GameObject.h"
 
-1543740826 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\objectlist.cpp
+1543745685 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\objectlist.cpp
 	"ObjectList.h"
 
 1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\pausescreen.cpp
 	"PauseScreen.h"
 	"TextManager.h"
 
-1543733088 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\player.cpp
+1543743304 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\player.cpp
 	"Player.h"
 	"TextManager.h"
 	"Weapon.h"
@@ -745,7 +745,7 @@
 	"QuitScreen.h"
 	"TextManager.h"
 
-1543732341 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\room.cpp
+1543742206 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\room.cpp
 	"Room.h"
 	"stdlib.h"
 

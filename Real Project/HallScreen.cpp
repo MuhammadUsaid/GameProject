@@ -181,6 +181,16 @@ void HallScreen::HandleEvents()
                 {
                     switch(e.key.keysym.sym)
                     {
+                    case SDLK_z:
+                        if(player->collidingWith->GetType() == APPLE || player->collidingWith->GetType() == SCALPEL || player->collidingWith->GetType() == INJECTION)
+                        {
+                            if(player->GetWeaponCount() < 10)
+                            {
+                                player->SetWeapons(player->collidingWith);
+                                player->collidingWith->SetExistence(false);
+                            }
+                        }
+                        break;
                     case SDLK_ESCAPE:
                         Screen::pause = 1;
                         break;

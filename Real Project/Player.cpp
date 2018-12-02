@@ -16,11 +16,16 @@ Player::Player()
     width = 40;
     height = 40;
     LoadWeapons();
-    weaponCount = 5;
+    weaponCount = 10;
     collidingWith = nullptr;
     srcRect = {150, 0, 50, 50};
     SetClips();
     Right = Left = Top = Bottom = false;
+}
+void Player::SetWeapons(GameObject* obj)
+{
+    weapons[weaponCount] = obj;
+    weaponCount++;
 }
 void Player::LoadWeapons()
 {
@@ -153,9 +158,13 @@ void Player::operator-=(float h)
 Player::~Player()
 {
     instance = nullptr;
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < weaponCount; i++)
     {
-        delete weapons[i];
+        if(weapons[i] != nullptr)
+        {
+            delete weapons[i];
+            //weapons[i] = nullptr;
+        }
     }
 }
 float Player::GetHealth()

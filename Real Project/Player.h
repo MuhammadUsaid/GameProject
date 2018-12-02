@@ -18,6 +18,7 @@ private:
 public:
     static Player* GetInstance();
     GameObject** GetWeapons();
+    void SetWeapons(GameObject*);
     GameObject* collidingWith;
     void Update();
     void Render();
