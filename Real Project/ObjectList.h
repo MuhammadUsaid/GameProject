@@ -22,6 +22,13 @@ public:
     void Render();
     void Update();
     bool CheckListCollision(SDL_Rect,Player*);
+    /** Helper Functions **/
+    bool PointInRectHelper(int x, int y, SDL_Rect rec);
+    bool CheckCollisionHelper(SDL_Rect r1, SDL_Rect r2);
+    bool CheckRight(SDL_Rect obj,  SDL_Rect player);
+    bool CheckLeft(SDL_Rect obj, SDL_Rect player);
+    bool CheckBottom(SDL_Rect obj, SDL_Rect player);
+    bool CheckTop(SDL_Rect obj, SDL_Rect player);
 };
 
 

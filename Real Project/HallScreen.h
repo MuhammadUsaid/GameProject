@@ -11,6 +11,7 @@
 #include <fstream>
 #include <sstream>
 #include "Door.h"
+#include "Room.h"
 #include "Inventory.h"
 class HallScreen: public Screen
 {
@@ -18,7 +19,7 @@ private:
     Player* player; //Our Main character which is a singleton
     Health* healthBar; //Health Bar of Player
     int roomNumber; //This number will us which room we are in
-    Screen* roomScreen[4]; // Different screens for 4 rooms
+    Room* roomScreen[4]; // Different screens for 4 rooms
     ObjectList* enemyList; // A list of Enemies
     ObjectList* doorList; // A list of doors
     ObjectFactory* objectFactory; //Object Factory to create weapons and enemies in hallway

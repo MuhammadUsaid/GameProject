@@ -61,114 +61,188 @@ void HallScreen::HandleEvents()
             running = false;
             break;
         case SDL_KEYDOWN:
-            if (enemyList->CheckListCollision(player->GetRect(),player))
+            if(roomNumber == 0)
             {
-                switch(e.key.keysym.sym)
+                if (enemyList->CheckListCollision(player->GetRect(),player))
                 {
-                case SDLK_ESCAPE:
-                    Screen::pause = 1;
-                    break;
-                case SDLK_p:
-                    Screen::pause = 1;
-                    break;
-                case SDLK_UP:
-                    if (!player->Bottom)
+                    switch(e.key.keysym.sym)
                     {
-                        player->MoveUp();
+                    case SDLK_ESCAPE:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_p:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_UP:
+                        if (!player->Bottom)
+                        {
+                            player->MoveUp();
+                            break;
+                        }
+                    case SDLK_DOWN:
+                        if (!player->Top)
+                        {
+                            player->MoveDown();
+                            break;
+                        }
+                    case SDLK_RIGHT:
+                        if (!player->Left)
+                        {
+                            player->MoveRight();
+                            break;
+                        }
+                    case SDLK_LEFT:
+                        if (!player->Right)
+                        {
+                            player->MoveLeft();
+                            break;
+                        }
+                    }
+                }
+                else if(doorList->CheckListCollision(player->GetRect(),player))
+                {
+                    switch(e.key.keysym.sym)
+                    {
+                    case SDLK_ESCAPE:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_p:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_LEFT:
+                        if(player->collidingWith == door[0])
+                        {
+                            roomNumber = 1;
+                            player->SetPosition(900, 640);
+                        }
+                        else if(player->collidingWith == door[1])
+                        {
+                            roomNumber = 2;
+                            player->SetPosition(900, 640);
+                        }
+                        else
+                        {
+                            player->MoveLeft();
+                        }
+                        break;
+                    case SDLK_RIGHT:
+                        if(player->collidingWith == door[2])
+                        {
+                            roomNumber = 3;
+                            player->SetPosition(60, 640);
+                        }
+                        else if(player->collidingWith == door[3])
+                        {
+                            roomNumber = 4;
+                            player->SetPosition(60, 640);
+                        }
+                        else
+                        {
+                            player->MoveLeft();
+                        }
                         break;
                     }
-                case SDLK_DOWN:
-                    if (!player->Top)
+                }
+                else
+                {
+                    switch(e.key.keysym.sym)
                     {
+                    case SDLK_ESCAPE:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_p:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_DOWN:
                         player->MoveDown();
                         break;
-                    }
-                case SDLK_RIGHT:
-                    if (!player->Left)
-                    {
-                        player->MoveLeft();
-                        break;
-                    }
-                case SDLK_LEFT:
-                    if (!player->Right)
-                    {
+                    case SDLK_RIGHT:
                         player->MoveRight();
                         break;
+                    case SDLK_LEFT:
+                        player->MoveLeft();
+                        break;
+                    case SDLK_UP:
+                        player->MoveUp();
+                        break;
+                    case SDLK_s:
+                        SaveHallScreen();
+                        break;
+                    case SDLK_l:
+                        LoadHallScreen();
+                        break;
                     }
                 }
-            }
-            else if( roomNumber == 0 && doorList->CheckListCollision(player->GetRect(),player))
-            {
-                switch(e.key.keysym.sym)
-                {
-                case SDLK_ESCAPE:
-                    Screen::pause = 1;
-                    break;
-                case SDLK_p:
-                    Screen::pause = 1;
-                    break;
-                case SDLK_LEFT:
-                    if(player->collidingWith == door[0])
-                    {
-                        roomNumber = 1;
-                        player->SetPosition(900, 640);
-                    }
-                    else if(player->collidingWith == door[1])
-                    {
-                        roomNumber = 2;
-                        player->SetPosition(900, 640);
-                    }
-                    else
-                    {
-                        player->MoveLeft();
-                    }
-                    break;
-                case SDLK_RIGHT:
-                    if(player->collidingWith == door[2])
-                    {
-                        roomNumber = 3;
-                        player->SetPosition(60, 640);
-                    }
-                    else if(player->collidingWith == door[3])
-                    {
-                        roomNumber = 4;
-                        player->SetPosition(60, 640);
-                    }
-                    else
-                    {
-                        player->MoveLeft();
-                    }
-                    break;
-                }
+
             }
             else
             {
-                switch(e.key.keysym.sym)
+                if(roomScreen[roomNumber - 1]->objectList->CheckListCollision(player->GetRect(),player))
                 {
-                case SDLK_ESCAPE:
-                    Screen::pause = 1;
-                    break;
-                case SDLK_p:
-                    Screen::pause = 1;
-                    break;
-                case SDLK_DOWN:
-                    player->MoveDown();
-                    break;
-                case SDLK_RIGHT:
-                    player->MoveRight();
-                    break;
-                case SDLK_LEFT:
-                    player->MoveLeft();
-                    break;
-                case SDLK_UP:
-                    player->MoveUp();
-                    break;
-                case SDLK_s:
-                    SaveHallScreen();
-                    break;
-                case SDLK_l:
-                    LoadHallScreen();
-                    break;
+                    switch(e.key.keysym.sym)
+                    {
+                    case SDLK_ESCAPE:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_p:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_UP:
+                        if (!player->Bottom)
+                        {
+                            player->MoveUp();
+                        }
+                        break;
+                    case SDLK_DOWN:
+                        if (!player->Top)
+                        {
+                            player->MoveDown();
+                        }
+                        break;
+                    case SDLK_RIGHT:
+                        if (!player->Left)
+                        {
+                            player->MoveRight();
+                        }
+                        break;
+                    case SDLK_LEFT:
+                        if (!player->Right)
+                        {
+                            player->MoveLeft();
+                            break;
+                        }
+
+                    }
+                }
+                else
+                {
+                    switch(e.key.keysym.sym)
+                    {
+                    case SDLK_ESCAPE:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_p:
+                        Screen::pause = 1;
+                        break;
+                    case SDLK_DOWN:
+                        player->MoveDown();
+                        break;
+                    case SDLK_RIGHT:
+                        player->MoveRight();
+                        break;
+                    case SDLK_LEFT:
+                        player->MoveLeft();
+                        break;
+                    case SDLK_UP:
+                        player->MoveUp();
+                        break;
+                    case SDLK_s:
+                        SaveHallScreen();
+                        break;
+                    case SDLK_l:
+                        LoadHallScreen();
+                        break;
+                    }
                 }
             }
         }

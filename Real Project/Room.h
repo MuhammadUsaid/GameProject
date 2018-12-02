@@ -8,11 +8,11 @@ class Room: public Screen
 private:
     ObjectFactory* factory;
     GameObject* objects[10];
-    ObjectList* objectList;
 public:
     Room(int);
     void HandleEvents();
     void Update();
     void Render();
+    ObjectList* objectList;
     ~Room();
 };
