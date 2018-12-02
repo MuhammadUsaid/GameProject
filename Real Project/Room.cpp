@@ -1,9 +1,11 @@
 #include "Room.h"
 #include "stdlib.h"
+#include "Sister.h"
 
 Room::Room(int number)
 {
 //    state = 0;
+    roomNumber = number;
     factory = new ObjectFactory;
     objectList = new ObjectList;
     const char* path = "Images/sprite.png";
@@ -14,7 +16,13 @@ Room::Room(int number)
     objects[4] = factory->getObject(BED, path, (rand() % 800) + 2, 10, 200, 100);
     objects[5] = factory->getObject(CUPBOARD, path, 10, (rand() % 500) + 100, 100, 200);
     objects[6] = factory->getObject(TABLE, path, (rand() % 400) + 300, (rand() % 200) + 300, 200, 100);
+    //if(number != 4)
+    //{
     objects[7] = factory->getObject(CHAIR, path, (objects[2]->GetX() + objects[2]->GetWidth() + 5), objects[2]->GetHeight(), 100, 100);
+    if (number==4)
+    {
+        sister = new Sister(600, 130);
+    }
     switch(number)
     {
     case 1:
@@ -46,17 +54,22 @@ void Room::Update()
 void Room::Render()
 {
     objectList->Render();
+    if(roomNumber == 4)
+        sister->Render();
 }
 Room::~Room()
 {
     delete factory;
     delete objectList;
-    for(int i = 0; i < 9; i++)
+    if(roomNumber != 4)
     {
-        delete objects[i];
+        for(int i = 0; i < 9; i++)
+        {
+            delete objects[i];
+        }
     }
 }
-GameObject* GetCupboard()
+GameObject* Room::GetCupboard()
 {
     return objects[5];
 }

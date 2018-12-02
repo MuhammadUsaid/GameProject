@@ -23,7 +23,7 @@ bool Cupboard::GetKeyState()
     return containsKey;
 }
 
-void Cupboard::SetKey(bool input)
+void Cupboard::SetKeyState(bool input)
 {
     containsKey = input;
 }

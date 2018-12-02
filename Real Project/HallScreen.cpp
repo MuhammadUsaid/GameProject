@@ -49,7 +49,8 @@ void HallScreen::InitializeRooms()
     roomScreen[1] = new Room(2);
     roomScreen[2] = new Room(3);
     roomScreen[3] = new Room(4);
-    roomScreen[rand % 3]->GetCupboard()->SetKeyState(true);
+    roomScreen[0]->GetCupboard()->SetKeyState(true);
+    cout << roomScreen[0]->GetCupboard()->GetKeyState();
 }
 void HallScreen::HandleEvents()
 {
@@ -75,25 +76,25 @@ void HallScreen::HandleEvents()
                         Screen::pause = 1;
                         break;
                     case SDLK_UP:
-                        if (!player->Bottom)
+                        if (!player->isBottom)
                         {
                             player->MoveUp();
                             break;
                         }
                     case SDLK_DOWN:
-                        if (!player->Top)
+                        if (!player->isTop)
                         {
                             player->MoveDown();
                             break;
                         }
                     case SDLK_RIGHT:
-                        if (!player->Left)
+                        if (!player->isLeft)
                         {
                             player->MoveRight();
                             break;
                         }
                     case SDLK_LEFT:
-                        if (!player->Right)
+                        if (!player->isRight)
                         {
                             player->MoveLeft();
                             break;
@@ -198,6 +199,7 @@ void HallScreen::HandleEvents()
                             if(player->collidingWith->GetKeyState())
                             {
                                 player->hasKey = true;
+                                cout << "Yes";
                             }
                         }
                         break;
@@ -208,30 +210,53 @@ void HallScreen::HandleEvents()
                         Screen::pause = 1;
                         break;
                     case SDLK_UP:
-                        if (!player->Bottom)
+                        if (!player->isBottom)
                         {
                             player->MoveUp();
                         }
                         break;
                     case SDLK_DOWN:
-                        if (!player->Top)
+                        if (!player->isTop)
                         {
                             player->MoveDown();
                         }
                         break;
                     case SDLK_RIGHT:
-                        if (!player->Left)
+                        if (!player->isLeft)
                         {
                             player->MoveRight();
                         }
+                        if(player->collidingWith->GetType() == DOOR)
+                        {
+                            if(roomNumber == 1)
+                            {
+                                player->SetPosition(70, 100);
+                            }
+                            else if(roomNumber == 2)
+                            {
+                                player->SetPosition(70, 650);
+                            }
+                            roomNumber = 0;
+                        }
                         break;
                     case SDLK_LEFT:
-                        if (!player->Right)
+                        if (!player->isRight)
                         {
                             player->MoveLeft();
-                            break;
                         }
-
+                        if(player->collidingWith->GetType() == DOOR)
+                        {
+                            if(roomNumber == 3)
+                            {
+                                player->SetPosition(900, 100);
+                            }
+                            else if(roomNumber == 4)
+                            {
+                                player->SetPosition(900, 650);
+                            }
+                            roomNumber = 0;
+                        }
+                        break;
                     }
                 }
                 else

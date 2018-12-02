@@ -10,5 +10,5 @@ public:
     bool GetKeyState();
     Cupboard(const char* path, int x, int y, int width, int height);
     void Render();
-    void SetKey(bool);
+    void SetKeyState(bool);
 };

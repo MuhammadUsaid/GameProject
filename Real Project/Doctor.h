@@ -7,10 +7,6 @@ class Doctor : public BaseCharacter
 {
     //void SetClips(); //Method To store all the sprites of different motion
     bool CompareRects(SDL_Rect a, SDL_Rect b);
-    SDL_Rect moveUp[4];
-    SDL_Rect moveDown[4];
-    SDL_Rect moveRight[4];
-    SDL_Rect moveLeft[4];
     int counter;
     int range;
     Weapon* weapon;

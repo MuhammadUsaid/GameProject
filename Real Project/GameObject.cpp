@@ -40,6 +40,8 @@ int GameObject::GetType()
 {
     return type;
 }
+bool GameObject::GetKeyState(){ return true; }
+void GameObject::SetKeyState(bool x){ }
 void GameObject::SetX(int x)
 {
     this->x = x;

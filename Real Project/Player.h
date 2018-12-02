@@ -32,7 +32,7 @@ public:
     void SetPosition(int x, int y); //WE need this when we enter a room
     void LoadWeapons(); //Initialize Weapons
     int GetWeaponCount();
-    bool Top,Bottom,Left,Right;
+    bool isTop, isBottom, isLeft, isRight;
     void DecreaseHealth(float);
     void operator+=(float);
     void operator-=(float);

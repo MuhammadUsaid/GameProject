@@ -10,6 +10,7 @@ Player::Player()
     texture = TextureManager::LoadTexture("Images/boy.png");
     x = 512;
     y = 0;
+    hasKey = true;
     alive = true;
     health = 100;
     speed = 10;
@@ -20,7 +21,7 @@ Player::Player()
     collidingWith = nullptr;
     srcRect = {150, 0, 50, 50};
     SetClips();
-    Right = Left = Top = Bottom = hasKey = false;
+    isRight = isLeft = isTop = isBottom = false;
 }
 void Player::SetWeapons(GameObject* obj)
 {

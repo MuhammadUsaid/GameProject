@@ -128,10 +128,10 @@ bool ObjectList::CheckListCollision(SDL_Rect player, Player* playerObj)
         {
             if (CheckCollisionHelper(temp->data->GetRect(),player) || CheckCollisionHelper(player, temp->data->GetRect()))
             {
-                playerObj->Top = CheckTop(temp->data->GetRect(),player);
-                playerObj->Bottom = CheckBottom(temp->data->GetRect(),player);
-                playerObj->Left = CheckLeft(temp->data->GetRect(),player);
-                playerObj->Right = CheckRight(temp->data->GetRect(),player);
+                playerObj->isTop = CheckTop(temp->data->GetRect(),player);
+                playerObj->isBottom = CheckBottom(temp->data->GetRect(),player);
+                playerObj->isLeft = CheckLeft(temp->data->GetRect(),player);
+                playerObj->isRight = CheckRight(temp->data->GetRect(),player);
                 playerObj->collidingWith = temp->data;
                 return true;
             }
