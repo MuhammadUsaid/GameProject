@@ -14,6 +14,7 @@ private:
     SDL_Rect moveRight[4];
     SDL_Rect moveLeft[4];
     GameObject* weapons[10];
+    int weaponCount;
 public:
     static Player* GetInstance();
     GameObject** GetWeapons();
@@ -25,7 +26,9 @@ public:
     void MoveRight();
     void MoveLeft();
     ~Player();
+    void SetPosition(int x, int y); //WE need this when we enter a room
     void LoadWeapons(); //Initialize Weapons
+    int GetWeaponCount();
     bool Top,Bottom,Left,Right;
     void DecreaseHealth(float);
     void operator+=(float);

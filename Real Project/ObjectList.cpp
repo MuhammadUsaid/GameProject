@@ -41,14 +41,28 @@ void ObjectList::Add(GameObject* value)
 }
 void ObjectList::Render()
 {
-    Node* temp = head;
-    while(temp!=NULL)
+    if(head != NULL)
     {
-        temp->data->Render();
-        temp=temp->next;
+        Node* temp = head;
+        while(temp!=NULL)
+        {
+            temp->data->Render();
+            temp=temp->next;
+        }
     }
 }
-
+void ObjectList::Update()
+{
+    if(head != NULL)
+    {
+        Node* temp = head;
+        while(temp!=NULL)
+        {
+            temp->data->Update();
+            temp=temp->next;
+        }
+    }
+}
 bool PointInRectHelper(int x, int y, SDL_Rect rec)
 {
     if (x >= rec.x && y >= rec.y && x <= (rec.x + rec.w) && y <= (rec.y + rec.h))

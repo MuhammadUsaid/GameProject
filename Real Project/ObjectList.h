@@ -20,6 +20,7 @@ public:
     void Add(GameObject*);
     int GetLength();
     void Render();
+    void Update();
     bool CheckListCollision(SDL_Rect,Player*);
 };
 

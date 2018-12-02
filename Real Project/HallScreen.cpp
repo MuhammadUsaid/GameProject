@@ -16,12 +16,12 @@ HallScreen::HallScreen()
     backGround = TextureManager::LoadTexture("Images/bg.jpeg");
     running = true;
     Screen::pause = 0;
-    doctor1 = new Doctor(10,0,false,true);
-    doctor2 = new Doctor(500,718,true,false);
-    doctor3 = new Doctor(900,0,false,true);
-    nurse1 = new Nurse(980,10,true,false);
-    nurse2 = new Nurse(0,350,false,true);
-    nurse3 = new Nurse(980,718,true, false);
+    enemies[0] = new Doctor(10,0,false,true);
+    enemies[1] = new Doctor(500,718,true,false);
+    enemies[2] = new Doctor(900,0,false,true);
+    enemies[3] = new Nurse(980,10,true,false);
+    enemies[4] = new Nurse(0,350,false,true);
+    enemies[5] = new Nurse(980,718,true, false);
     door[0] = new Door("Images/door.png", 0, 0, 70, 150);
     door[1] = new Door("Images/door.png", 0, 600, 70, 150);
     door[2] = new Door("Images/door.png", 950, 0, 70, 150);
@@ -34,6 +34,13 @@ void HallScreen::AddDoors()
     for(int i = 0; i < 4; i++)
     {
         doorList->Add(door[i]);
+    }
+}
+void HallScreen::AddEnemies()
+{
+    for(int i = 0; i < 6; i++)
+    {
+        enemyList->Add(enemies[i]);
     }
 }
 void HallScreen::InitializeRooms()
@@ -104,10 +111,12 @@ void HallScreen::HandleEvents()
                     if(player->collidingWith == door[0])
                     {
                         roomNumber = 1;
+                        player->SetPosition(900, 640);
                     }
                     else if(player->collidingWith == door[1])
                     {
                         roomNumber = 2;
+                        player->SetPosition(900, 640);
                     }
                     else
                     {
@@ -118,10 +127,12 @@ void HallScreen::HandleEvents()
                     if(player->collidingWith == door[2])
                     {
                         roomNumber = 3;
+                        player->SetPosition(60, 640);
                     }
                     else if(player->collidingWith == door[3])
                     {
                         roomNumber = 4;
+                        player->SetPosition(60, 640);
                     }
                     else
                     {
@@ -186,17 +197,11 @@ void HallScreen::Update()
         roomScreen[3]->Update();
         break;
     default:
-//        enemyList->Update();
+        enemyList->Update();
         break;
     }
     player->Update();
     healthBar->Update();
-    doctor1->Update();
-    doctor2->Update();
-    doctor3->Update();
-    nurse1->Update();
-    nurse2->Update();
-    nurse3->Update();
 }
 void HallScreen::Render()
 {
@@ -218,12 +223,12 @@ void HallScreen::Render()
         SDL_RenderCopy(Game::renderer, backGround, nullptr, nullptr);
         doorList->Render();
         //objectList->Render();
-        //enemyList->Render();
+        enemyList->Render();
         break;
     }
     healthBar->Render();
     player->Render();
-    enemyList->Render();
+    //enemyList->Render();
     inventory->Render();
 }
 HallScreen::~HallScreen()
@@ -239,12 +244,12 @@ HallScreen::~HallScreen()
     {
         delete roomScreen[i];
     }
-    delete doctor1;
-    delete doctor2;
-    delete doctor3;
-    delete nurse1;
-    delete nurse2;
-    delete nurse3;
+//    delete doctor1;
+//    delete doctor2;
+//    delete doctor3;
+//    delete nurse1;
+//    delete nurse2;
+//    delete nurse3;
 }
 void HallScreen::SaveHallScreen()
 {
@@ -278,15 +283,7 @@ void HallScreen::SaveHallScreen()
     file << nurse3->left<<"\n";
     file << nurse3->right<<"\n";
 }
-void HallScreen::AddEnemies()
-{
-    enemyList->Add(doctor1);
-    enemyList->Add(doctor2);
-    enemyList->Add(doctor3);
-    enemyList->Add(nurse1);
-    enemyList->Add(nurse2);
-    enemyList->Add(nurse3);
-}
+
 void HallScreen::LoadHallScreen()
 {
     ifstream file ("HallScreenData.csv");

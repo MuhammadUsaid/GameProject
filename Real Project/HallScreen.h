@@ -23,6 +23,7 @@ private:
     ObjectList* doorList; // A list of doors
     ObjectFactory* objectFactory; //Object Factory to create weapons and enemies in hallway
     GameObject* objects[5]; //All the weapons in this array of pointers
+    GameObject* enemies[6]; //All the enemies
     Inventory* inventory;
     void AddDoors(); //Method of Adding the objects to the list
     void AddEnemies(); //Method of Adding the enemies to the list

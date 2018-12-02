@@ -16,6 +16,7 @@ Player::Player()
     width = 40;
     height = 40;
     LoadWeapons();
+    weaponCount = 5;
     collidingWith = nullptr;
     srcRect = {150, 0, 50, 50};
     SetClips();
@@ -32,7 +33,15 @@ GameObject** Player::GetWeapons()
 {
     return weapons;
 }
-
+int Player::GetWeaponCount()
+{
+    return weaponCount;
+}
+void Player::SetPosition(int x, int y)
+{
+    this->x = x;
+    this->y = y;
+}
 Player* Player::GetInstance()
 {
     if(instance == nullptr)
