@@ -1,0 +1,769 @@
+# depslib dependency file v1.0
+1543670821 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\apple.cpp
+	"Apple.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\apple.h
+	"Weapon.h"
+
+1543677076 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\weapon.h
+	"GameObject.h"
+
+1543669425 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\gameobject.h
+	<SDL2/SDL.h>
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\bananapeel.cpp
+	"BananaPeel.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\bananapeel.h
+	"GameObject.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\bed.cpp
+	"Bed.h"
+	"TextManager.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\bed.h
+	"GameObject.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\textmanager.h
+	<SDL2/SDL_image.h>
+	"Game.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\game.h
+	<iostream>
+	<SDL2/SDL.h>
+	"Screen.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\screen.h
+	"SDL2/SDL.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\button.cpp
+	"Button.h"
+	"Game.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\button.h
+	"Word.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\word.h
+	"Character.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\character.h
+	<SDL2/SDL.h>
+	<iostream>
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\chair.cpp
+	"Chair.h"
+	"TextManager.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\chair.h
+	"GameObject.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\character.cpp
+	"Character.h"
+	"Game.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\cupboard.cpp
+	"Cupboard.h"
+	"TextManager.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\cupboard.h
+	"GameObject.h"
+
+1543663894 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+	"SplashScreen.h"
+	"MenuScreen.h"
+	"HallScreen.h"
+	"QuitScreen.h"
+	"PauseScreen.h"
+	"Room.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\splashscreen.h
+	"Screen.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\menuscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543677495 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\hallscreen.h
+	"Screen.h"
+	"Player.h"
+	"Health.h"
+	"ObjectList.h"
+	"Doctor.h"
+	"Nurse.h"
+	"ObjectFactory.h"
+	<iostream>
+	<stdio.h>
+	<fstream>
+	<sstream>
+	"Door.h"
+
+1543670475 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\player.h
+	"BaseCharacter.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\basecharacter.h
+	"GameObject.h"
+
+1543673085 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\health.h
+	<SDL2/SDL.h>
+
+1543673982 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\objectlist.h
+	"GameObject.h"
+	"Player.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\objectfactory.h
+	"GameObject.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\quitscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\pausescreen.h
+	"Screen.h"
+	"Button.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\room.h
+	"Screen.h"
+	"ObjectFactory.h"
+	"ObjectList.h"
+
+1543664590 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\gameobject.cpp
+	"GameObject.h"
+	"TextManager.h"
+
+1543678457 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\hallscreen.cpp
+	"HallScreen.h"
+	"TextManager.h"
+	"Room.h"
+
+1543673150 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\health.cpp
+	"Health.h"
+	"Game.h"
+	"Player.h"
+
+1543670633 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\injection.cpp
+	"Injection.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\injection.h
+	"Weapon.h"
+
+1543670253 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\inventory.cpp
+	"Inventory.h"
+	"Player.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\inventory.h
+	"Weapon.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\main.cpp
+	"Game.h"
+	"time.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\menuscreen.cpp
+	"MenuScreen.h"
+	"TextManager.h"
+	"Button.h"
+
+1543670058 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\objectfactory.cpp
+	"ObjectFactory.h"
+	"Bed.h"
+	"Chair.h"
+	"Cupboard.h"
+	"Table.h"
+	"Apple.h"
+	"BananaPeel.h"
+	"Injection.h"
+	"Scalpel.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\table.h
+	"GameObject.h"
+
+1543615056 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\scissor.h
+	"Weapon.h"
+
+1543673982 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\objectlist.cpp
+	"ObjectList.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\pausescreen.cpp
+	"PauseScreen.h"
+	"TextManager.h"
+
+1543674107 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\player.cpp
+	"Player.h"
+	"TextManager.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\quitscreen.cpp
+	"QuitScreen.h"
+	"TextManager.h"
+
+1543670069 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\room.cpp
+	"Room.h"
+	"stdlib.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\scissor.cpp
+	"Scissor.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\splashscreen.cpp
+	"SplashScreen.h"
+	"TextManager.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\table.cpp
+	"Table.h"
+	"Game.h"
+
+1543677076 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\weapon.cpp
+	"Weapon.h"
+	"TextManager.h"
+	"Player.h"
+
+1543615056 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\word.cpp
+	"Word.h"
+
+1543677674 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\doctor.h
+	"BaseCharacter.h"
+	"Scalpel.h"
+	"Weapon.h"
+
+1543668022 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\scalpel.h
+	"Weapon.h"
+
+1543677454 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\nurse.h
+	"BaseCharacter.h"
+	"Weapon.h"
+	"Injection.h"
+
+1543677769 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\doctor.cpp
+	"Doctor.h"
+	"TextManager.h"
+	<iostream>
+	"Player.h"
+
+1543675302 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\scalpel.cpp
+	"Scalpel.h"
+
+1543677454 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\nurse.cpp
+	"Nurse.h"
+	"TextManager.h"
+	<iostream>
+	"Player.h"
+
+1543678531 source:c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\door.cpp
+	"Door.h"
+	"TextManager.h"
+	<iostream>
+
+1543676320 c:\users\noman\desktop\hu\3rd semester\oop & design methodologies\project\1st dec\gameproject-master\mygame\door.h
+	"GameObject.h"
+
+1543670822 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\apple.cpp
+	"Apple.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\apple.h
+	"Weapon.h"
+
+1543718285 e:\semester3\object oriented programming\hospital ka qaidi\mygame\weapon.h
+	"GameObject.h"
+
+1543730229 e:\semester3\object oriented programming\hospital ka qaidi\mygame\gameobject.h
+	<SDL2/SDL.h>
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\bananapeel.cpp
+	"BananaPeel.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\bananapeel.h
+	"GameObject.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\bed.cpp
+	"Bed.h"
+	"TextManager.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\bed.h
+	"GameObject.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\textmanager.h
+	<SDL2/SDL_image.h>
+	"Game.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\game.h
+	<iostream>
+	<SDL2/SDL.h>
+	"Screen.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\screen.h
+	"SDL2/SDL.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\button.cpp
+	"Button.h"
+	"Game.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\button.h
+	"Word.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\word.h
+	"Character.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\character.h
+	<SDL2/SDL.h>
+	<iostream>
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\chair.cpp
+	"Chair.h"
+	"TextManager.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\chair.h
+	"GameObject.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\character.cpp
+	"Character.h"
+	"Game.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\cupboard.cpp
+	"Cupboard.h"
+	"TextManager.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\cupboard.h
+	"GameObject.h"
+
+1543706622 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+	"SplashScreen.h"
+	"MenuScreen.h"
+	"HallScreen.h"
+	"QuitScreen.h"
+	"PauseScreen.h"
+	"Room.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\splashscreen.h
+	"Screen.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\menuscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543720975 e:\semester3\object oriented programming\hospital ka qaidi\mygame\hallscreen.h
+	"Screen.h"
+	"Player.h"
+	"Health.h"
+	"ObjectList.h"
+	"Doctor.h"
+	"Nurse.h"
+	"ObjectFactory.h"
+	<iostream>
+	<stdio.h>
+	<fstream>
+	<sstream>
+	"Door.h"
+	"Inventory.h"
+
+1543723630 e:\semester3\object oriented programming\hospital ka qaidi\mygame\player.h
+	"BaseCharacter.h"
+	"GameObject.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\basecharacter.h
+	"GameObject.h"
+
+1543673086 e:\semester3\object oriented programming\hospital ka qaidi\mygame\health.h
+	<SDL2/SDL.h>
+
+1543673984 e:\semester3\object oriented programming\hospital ka qaidi\mygame\objectlist.h
+	"GameObject.h"
+	"Player.h"
+
+1543677676 e:\semester3\object oriented programming\hospital ka qaidi\mygame\doctor.h
+	"BaseCharacter.h"
+	"Scalpel.h"
+	"Weapon.h"
+
+1543668024 e:\semester3\object oriented programming\hospital ka qaidi\mygame\scalpel.h
+	"Weapon.h"
+
+1543677456 e:\semester3\object oriented programming\hospital ka qaidi\mygame\nurse.h
+	"BaseCharacter.h"
+	"Weapon.h"
+	"Injection.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\injection.h
+	"Weapon.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\objectfactory.h
+	"GameObject.h"
+
+1543676322 e:\semester3\object oriented programming\hospital ka qaidi\mygame\door.h
+	"GameObject.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\quitscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\pausescreen.h
+	"Screen.h"
+	"Button.h"
+
+1543729745 e:\semester3\object oriented programming\hospital ka qaidi\mygame\room.h
+	"Screen.h"
+	"ObjectFactory.h"
+	"ObjectList.h"
+
+1543719013 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\gameobject.cpp
+	"GameObject.h"
+	"TextManager.h"
+
+1543732092 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\hallscreen.cpp
+	"HallScreen.h"
+	"TextManager.h"
+	"Room.h"
+
+1543724361 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\health.cpp
+	"Health.h"
+	"Game.h"
+	"Player.h"
+
+1543670634 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\injection.cpp
+	"Injection.h"
+
+1543723444 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\inventory.cpp
+	"Inventory.h"
+	"Player.h"
+	"Game.h"
+
+1543718366 e:\semester3\object oriented programming\hospital ka qaidi\mygame\inventory.h
+	"Weapon.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\main.cpp
+	"Game.h"
+	"time.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\menuscreen.cpp
+	"MenuScreen.h"
+	"TextManager.h"
+	"Button.h"
+
+1543732116 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\objectfactory.cpp
+	"ObjectFactory.h"
+	"Bed.h"
+	"Chair.h"
+	"Cupboard.h"
+	"Table.h"
+	"Apple.h"
+	"Door.h"
+	"BananaPeel.h"
+	"Injection.h"
+	"Scalpel.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\mygame\table.h
+	"GameObject.h"
+
+1543723748 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\objectlist.cpp
+	"ObjectList.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\pausescreen.cpp
+	"PauseScreen.h"
+	"TextManager.h"
+
+1543723655 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\player.cpp
+	"Player.h"
+	"TextManager.h"
+	"Weapon.h"
+	"Apple.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\quitscreen.cpp
+	"QuitScreen.h"
+	"TextManager.h"
+
+1543732071 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\room.cpp
+	"Room.h"
+	"stdlib.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\splashscreen.cpp
+	"SplashScreen.h"
+	"TextManager.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\table.cpp
+	"Table.h"
+	"Game.h"
+
+1543718314 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\weapon.cpp
+	"Weapon.h"
+	"TextManager.h"
+	"Player.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\word.cpp
+	"Word.h"
+
+1543677770 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\doctor.cpp
+	"Doctor.h"
+	"TextManager.h"
+	<iostream>
+	"Player.h"
+
+1543730270 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\door.cpp
+	"Door.h"
+	"TextManager.h"
+	<iostream>
+
+1543677456 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\nurse.cpp
+	"Nurse.h"
+	"TextManager.h"
+	<iostream>
+	"Player.h"
+
+1543675304 source:e:\semester3\object oriented programming\hospital ka qaidi\mygame\scalpel.cpp
+	"Scalpel.h"
+
+1543670822 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\apple.cpp
+	"Apple.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\apple.h
+	"Weapon.h"
+
+1543718285 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\weapon.h
+	"GameObject.h"
+
+1543730229 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\gameobject.h
+	<SDL2/SDL.h>
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\bananapeel.cpp
+	"BananaPeel.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\bananapeel.h
+	"GameObject.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\bed.cpp
+	"Bed.h"
+	"TextManager.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\bed.h
+	"GameObject.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\textmanager.h
+	<SDL2/SDL_image.h>
+	"Game.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\game.h
+	<iostream>
+	<SDL2/SDL.h>
+	"Screen.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\screen.h
+	"SDL2/SDL.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\button.cpp
+	"Button.h"
+	"Game.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\button.h
+	"Word.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\word.h
+	"Character.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\character.h
+	<SDL2/SDL.h>
+	<iostream>
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\chair.cpp
+	"Chair.h"
+	"TextManager.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\chair.h
+	"GameObject.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\character.cpp
+	"Character.h"
+	"Game.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\cupboard.cpp
+	"Cupboard.h"
+	"TextManager.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\cupboard.h
+	"GameObject.h"
+
+1543677770 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\doctor.cpp
+	"Doctor.h"
+	"TextManager.h"
+	<iostream>
+	"Player.h"
+
+1543677676 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\doctor.h
+	"BaseCharacter.h"
+	"Scalpel.h"
+	"Weapon.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\basecharacter.h
+	"GameObject.h"
+
+1543668024 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\scalpel.h
+	"Weapon.h"
+
+1543723630 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\player.h
+	"BaseCharacter.h"
+	"GameObject.h"
+
+1543730270 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\door.cpp
+	"Door.h"
+	"TextManager.h"
+	<iostream>
+
+1543676322 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\door.h
+	"GameObject.h"
+
+1543706622 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\game.cpp
+	"Game.h"
+	<SDL2/SDL_image.h>
+	"SplashScreen.h"
+	"MenuScreen.h"
+	"HallScreen.h"
+	"QuitScreen.h"
+	"PauseScreen.h"
+	"Room.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\splashscreen.h
+	"Screen.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\menuscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543720975 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\hallscreen.h
+	"Screen.h"
+	"Player.h"
+	"Health.h"
+	"ObjectList.h"
+	"Doctor.h"
+	"Nurse.h"
+	"ObjectFactory.h"
+	<iostream>
+	<stdio.h>
+	<fstream>
+	<sstream>
+	"Door.h"
+	"Inventory.h"
+
+1543673086 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\health.h
+	<SDL2/SDL.h>
+
+1543673984 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\objectlist.h
+	"GameObject.h"
+	"Player.h"
+
+1543677456 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\nurse.h
+	"BaseCharacter.h"
+	"Weapon.h"
+	"Injection.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\injection.h
+	"Weapon.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\objectfactory.h
+	"GameObject.h"
+
+1543718366 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\inventory.h
+	"Weapon.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\quitscreen.h
+	"Screen.h"
+	"Button.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\pausescreen.h
+	"Screen.h"
+	"Button.h"
+
+1543729745 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\room.h
+	"Screen.h"
+	"ObjectFactory.h"
+	"ObjectList.h"
+
+1543719013 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\gameobject.cpp
+	"GameObject.h"
+	"TextManager.h"
+
+1543732092 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\hallscreen.cpp
+	"HallScreen.h"
+	"TextManager.h"
+	"Room.h"
+
+1543724361 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\health.cpp
+	"Health.h"
+	"Game.h"
+	"Player.h"
+
+1543670634 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\injection.cpp
+	"Injection.h"
+
+1543723444 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\inventory.cpp
+	"Inventory.h"
+	"Player.h"
+	"Game.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\main.cpp
+	"Game.h"
+	"time.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\menuscreen.cpp
+	"MenuScreen.h"
+	"TextManager.h"
+	"Button.h"
+
+1543677456 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\nurse.cpp
+	"Nurse.h"
+	"TextManager.h"
+	<iostream>
+	"Player.h"
+
+1543732116 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\objectfactory.cpp
+	"ObjectFactory.h"
+	"Bed.h"
+	"Chair.h"
+	"Cupboard.h"
+	"Table.h"
+	"Apple.h"
+	"Door.h"
+	"BananaPeel.h"
+	"Injection.h"
+	"Scalpel.h"
+
+1543615056 e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\table.h
+	"GameObject.h"
+
+1543723748 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\objectlist.cpp
+	"ObjectList.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\pausescreen.cpp
+	"PauseScreen.h"
+	"TextManager.h"
+
+1543723655 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\player.cpp
+	"Player.h"
+	"TextManager.h"
+	"Weapon.h"
+	"Apple.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\quitscreen.cpp
+	"QuitScreen.h"
+	"TextManager.h"
+
+1543732341 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\room.cpp
+	"Room.h"
+	"stdlib.h"
+
+1543675304 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\scalpel.cpp
+	"Scalpel.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\splashscreen.cpp
+	"SplashScreen.h"
+	"TextManager.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\table.cpp
+	"Table.h"
+	"Game.h"
+
+1543718314 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\weapon.cpp
+	"Weapon.h"
+	"TextManager.h"
+	"Player.h"
+
+1543615056 source:e:\semester3\object oriented programming\hospital ka qaidi\gameproject\real project\word.cpp
+	"Word.h"
+

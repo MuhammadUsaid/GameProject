@@ -1,0 +1,32 @@
+#pragma once
+#include <SDL2/SDL.h>
+enum TYPE{WALL, BED, CUPBOARD, CHAIR, TABLE, APPLE, INJECTION, SCALPEL, BANANAPEEL, DOOR};
+class GameObject
+{
+protected:
+    int x;
+    int y;
+    int width;
+    int height;
+    int type;
+    SDL_Texture* texture;
+    SDL_Rect dstRect;
+    SDL_Rect srcRect;
+public:
+    GameObject();
+    GameObject(const char* path, int x, int y, int width, int height);
+    int GetX();
+    int GetY();
+    int GetWidth();
+    int GetHeight();
+    virtual SDL_Texture* GetTexture();
+    virtual SDL_Rect* GetSrc();
+    SDL_Rect GetRect();
+    void SetX(int);
+    void SetY(int);
+    bool PointInRect(int,int,SDL_Rect);
+    bool CheckCollision(SDL_Rect,SDL_Rect);
+    virtual void Update();
+    virtual void Render();
+    virtual ~GameObject();
+};

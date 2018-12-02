@@ -52,6 +52,10 @@
 		<Unit filename="Character.h" />
 		<Unit filename="Cupboard.cpp" />
 		<Unit filename="Cupboard.h" />
+		<Unit filename="Doctor.cpp" />
+		<Unit filename="Doctor.h" />
+		<Unit filename="Door.cpp" />
+		<Unit filename="Door.h" />
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
 		<Unit filename="GameObject.cpp" />
@@ -66,6 +70,8 @@
 		<Unit filename="Inventory.h" />
 		<Unit filename="MenuScreen.cpp" />
 		<Unit filename="MenuScreen.h" />
+		<Unit filename="Nurse.cpp" />
+		<Unit filename="Nurse.h" />
 		<Unit filename="ObjectFactory.cpp" />
 		<Unit filename="ObjectFactory.h" />
 		<Unit filename="ObjectList.cpp" />
@@ -78,7 +84,8 @@
 		<Unit filename="QuitScreen.h" />
 		<Unit filename="Room.cpp" />
 		<Unit filename="Room.h" />
-		<Unit filename="Scissor.cpp" />
+		<Unit filename="Scalpel.cpp" />
+		<Unit filename="Scalpel.h" />
 		<Unit filename="Scissor.h" />
 		<Unit filename="Screen.h" />
 		<Unit filename="SplashScreen.cpp" />
