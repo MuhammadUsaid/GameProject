@@ -13,6 +13,7 @@
 #include "Door.h"
 #include "Room.h"
 #include "Inventory.h"
+
 class HallScreen: public Screen
 {
 private:

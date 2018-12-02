@@ -16,11 +16,11 @@ Player::Player()
     width = 40;
     height = 40;
     LoadWeapons();
-    weaponCount = 10;
+    weaponCount = 8;
     collidingWith = nullptr;
     srcRect = {150, 0, 50, 50};
     SetClips();
-    Right = Left = Top = Bottom = false;
+    Right = Left = Top = Bottom = hasKey = false;
 }
 void Player::SetWeapons(GameObject* obj)
 {
@@ -29,9 +29,10 @@ void Player::SetWeapons(GameObject* obj)
 }
 void Player::LoadWeapons()
 {
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 8; i++)
     {
         weapons[i] = new Apple("Images/sprite.png", x, y, 25, 25, 15, 10);
+        weapons[i]->isInPlayer = true;
     }
 }
 GameObject** Player::GetWeapons()
@@ -47,6 +48,7 @@ void Player::SetPosition(int x, int y)
     this->x = x;
     this->y = y;
 }
+
 Player* Player::GetInstance()
 {
     if(instance == nullptr)
@@ -143,6 +145,17 @@ void Player::Render()
 {
     SDL_RenderCopy(Game::renderer, texture, &srcRect, &dstRect);
 }
+void Player::Attack()
+{
+    weapons[weaponCount - 1]->Render();
+    for(int i = 0; i < 3; i++)
+    {
+        if ( CompareRects(moveLeft[i], srcRect) )
+        {
+            weapons[weaponCount - 1]->Render();
+        }
+    }
+}
 void Player::DecreaseHealth(float power)
 {
     health -= power;
@@ -158,14 +171,10 @@ void Player::operator-=(float h)
 Player::~Player()
 {
     instance = nullptr;
-    for(int i = 0; i < weaponCount; i++)
-    {
-        if(weapons[i] != nullptr)
-        {
-            delete weapons[i];
-            //weapons[i] = nullptr;
-        }
-    }
+//    for(int i = 0; i < weaponCount; i++)
+//    {
+//        delete weapons[i];
+//    }
 }
 float Player::GetHealth()
 {

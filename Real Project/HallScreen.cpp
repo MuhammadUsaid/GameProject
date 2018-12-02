@@ -49,6 +49,7 @@ void HallScreen::InitializeRooms()
     roomScreen[1] = new Room(2);
     roomScreen[2] = new Room(3);
     roomScreen[3] = new Room(4);
+    roomScreen[rand % 3]->GetCupboard()->SetKeyState(true);
 }
 void HallScreen::HandleEvents()
 {
@@ -131,7 +132,7 @@ void HallScreen::HandleEvents()
                             roomNumber = 3;
                             player->SetPosition(60, 640);
                         }
-                        else if(player->collidingWith == door[3])
+                        else if(player->collidingWith == door[3] && player->hasKey)
                         {
                             roomNumber = 4;
                             player->SetPosition(60, 640);
@@ -175,8 +176,9 @@ void HallScreen::HandleEvents()
                 }
 
             }
-            else
+            else //into room
             {
+
                 if(roomScreen[roomNumber - 1]->objectList->CheckListCollision(player->GetRect(),player))
                 {
                     switch(e.key.keysym.sym)
@@ -188,6 +190,14 @@ void HallScreen::HandleEvents()
                             {
                                 player->SetWeapons(player->collidingWith);
                                 player->collidingWith->SetExistence(false);
+                                player->collidingWith->isInPlayer = true;
+                            }
+                        }
+                        else if (player->collidingWith->GetType() == CUPBOARD)
+                        {
+                            if(player->collidingWith->GetKeyState())
+                            {
+                                player->hasKey = true;
                             }
                         }
                         break;

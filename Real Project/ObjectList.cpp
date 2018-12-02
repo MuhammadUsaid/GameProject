@@ -14,7 +14,10 @@ ObjectList::~ObjectList()
     {
         Node* temp = head;
         head = head->next;
-        delete temp;
+        if(!temp->data->isInPlayer)
+        {
+            delete temp;
+        }
     }
 }
 int ObjectList::GetLength()

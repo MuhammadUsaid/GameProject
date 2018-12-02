@@ -14,5 +14,6 @@ public:
     void Update();
     void Render();
     ObjectList* objectList;
+    GameObject* GetCupboard();
     ~Room();
 };

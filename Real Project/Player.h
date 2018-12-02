@@ -18,10 +18,12 @@ private:
 public:
     static Player* GetInstance();
     GameObject** GetWeapons();
+    bool hasKey;
     void SetWeapons(GameObject*);
     GameObject* collidingWith;
     void Update();
     void Render();
+    void Attack();
     void MoveUp();
     void MoveDown();
     void MoveRight();

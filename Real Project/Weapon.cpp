@@ -7,6 +7,7 @@ Weapon::Weapon(const char* path, int x, int y, int width, int height, float powe
 {
     this->power = power;
     this->range = range;
+    isInPlayer = false;
     srcRect =  {750, 370, 100, 90};
     //counter = 0;
 }

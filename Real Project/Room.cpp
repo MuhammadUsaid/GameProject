@@ -56,3 +56,7 @@ Room::~Room()
         delete objects[i];
     }
 }
+GameObject* GetCupboard()
+{
+    return objects[5];
+}

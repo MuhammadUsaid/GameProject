@@ -9,6 +9,7 @@ private:
     int range;
     int counter;
 public:
+    bool isInPlayer;
     Weapon();
     Weapon(const char* path, int x, int y, int width, int height, float power, int range);
     void Update();

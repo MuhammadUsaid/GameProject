@@ -14,6 +14,7 @@ protected:
     SDL_Rect dstRect;
     SDL_Rect srcRect;
 public:
+    bool isInPlayer;
     GameObject();
     GameObject(const char* path, int x, int y, int width, int height);
     int GetX();
